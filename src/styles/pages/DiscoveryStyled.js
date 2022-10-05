@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { colors, sizes, miscSizes } from "../../assets/common";
+import { colors, sizes, miscSizes, deviceSizes } from "../../assets/common";
 
 export const Container = styled.div`
   width: 100%;
@@ -21,4 +21,8 @@ export const Selection = styled.select`
   border-radius: ${miscSizes.small};
   color: ${colors.letters};
   font-size: ${sizes.medium};
+
+  @media ${deviceSizes.mobileScreen} {
+    font-size: ${sizes.small};
+  }
 `;
