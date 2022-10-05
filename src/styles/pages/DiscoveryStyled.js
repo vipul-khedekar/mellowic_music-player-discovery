@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { colors, sizes, miscSizes, deviceSizes } from "../../assets/common";
+import { colors, sizes, deviceSizes } from "../../assets/common";
 
 export const Container = styled.div`
   width: 100%;
@@ -16,9 +16,9 @@ export const BigText = styled.h2`
 
 export const Selection = styled.select`
   background-color: ${colors.orangish};
-  padding: ${miscSizes.small} ${miscSizes.medium};
+  padding: 0.125rem 0.25rem;
   border: none;
-  border-radius: ${miscSizes.small};
+  border-radius: 0.125rem;
   color: ${colors.letters};
   font-size: ${sizes.medium};
 
