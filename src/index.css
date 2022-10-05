@@ -1,3 +1,8 @@
+:root {
+    --backdrop: #462445;
+    --letters: #fceae6;
+}
+
 html,
 body {
     box-sizing: border-box;
@@ -6,6 +11,9 @@ body {
 }
 
 body {
+    background-color: var(--backdrop);
     height: 100vh;
     width: 100vw;
+    padding: 0.25rem 1rem;
+    color: var(--letters);
 }
