@@ -4,13 +4,9 @@ export const deviceSizes = {
 };
 
 export const sizes = {
-  xxxLarge: `2rem`,
-  xxLarge: `1.5rem`,
-  xLarge: `1.25`,
-  large: `1.125rem`,
-  medium: `1rem`,
-  small: `0.875rem`,
-  xSmall: `0.75rem`,
+  xLarge: `1.5rem`,
+  large: `1.25`,
+  small: `0.75rem`,
 };
 
 export const miscSizes = {
