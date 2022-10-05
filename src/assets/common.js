@@ -5,7 +5,8 @@ export const deviceSizes = {
 
 export const sizes = {
   xLarge: `1.5rem`,
-  large: `1.25`,
+  large: `1.25rem`,
+  medium: `1.125rem`,
   small: `0.75rem`,
 };
 
@@ -19,6 +20,8 @@ export const miscSizes = {
 };
 
 export const colors = {
+  backdrop: `#462445`,
+  letters: `#fceae6`,
   darkBerry: `#673653`,
   lightBerry: `#ae606d`,
   darkPeach: `#de8274`,
