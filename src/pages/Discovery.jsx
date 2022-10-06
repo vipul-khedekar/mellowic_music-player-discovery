@@ -10,7 +10,7 @@ import ResultsError from "../components/ResultsError";
 import Song from "../components/cards/Song";
 
 function Discovery() {
-  const { data, isFetching, isError } = useGetTopChartsQuery();
+  // const { data, isFetching, isError } = useGetTopChartsQuery();
 
   return (
     <ColumnContainer>
@@ -24,7 +24,9 @@ function Discovery() {
         </Selection>
       </Container>
 
-      <DisplayList>
+      <Song />
+
+      {/* <DisplayList>
         {isFetching && <DancingBars />}
 
         {isError && <ResultsError />}
@@ -32,7 +34,7 @@ function Discovery() {
         {data?.map((song, i) => {
           return <Song key={song.key} song={song} i={i} />;
         })}
-      </DisplayList>
+      </DisplayList> */}
     </ColumnContainer>
   );
 }
