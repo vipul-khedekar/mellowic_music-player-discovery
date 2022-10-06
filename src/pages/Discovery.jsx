@@ -3,8 +3,12 @@ import { DisplayList } from "../styles/DisplayList";
 import { Container, BigText, Selection } from "../styles/pages/DiscoveryStyled";
 
 import { genres } from "../assets/constants";
+import { useGetTopChartsQuery } from "../store/services/shazamCore";
+import Song from "../components/cards/Song";
 
 function Discovery() {
+  const { data, isFetching, isError } = useGetTopChartsQuery();
+
   return (
     <ColumnContainer>
       <Container>
@@ -18,8 +22,8 @@ function Discovery() {
       </Container>
 
       <DisplayList>
-        {[1, 2, 3, 4, 5].map((song, i) => {
-          return <p key={i}>{song}</p>;
+        {data?.map((song, i) => {
+          return <Song key={song.key} song={song} i={i} />;
         })}
       </DisplayList>
     </ColumnContainer>
