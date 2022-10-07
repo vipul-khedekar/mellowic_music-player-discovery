@@ -6,7 +6,7 @@ export const deviceSizes = {
 export const sizes = {
   xLarge: `1.5rem`,
   large: `1.25rem`,
-  medium: `1.125rem`,
+  medium: `1rem`,
   small: `0.75rem`,
 };
 
