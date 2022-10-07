@@ -10,7 +10,13 @@ const initialState = {
 const playerSlice = createSlice({
   name: "player",
   initialState: initialState,
-  reducers: {},
+  reducers: {
+    playAndPause: (state, action) => {
+      state.isPlaying = action.payload;
+    },
+  },
 });
+
+export const { playAndPause } = playerSlice.actions;
 
 export default playerSlice.reducer;
