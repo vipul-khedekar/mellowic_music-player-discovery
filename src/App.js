@@ -1,5 +1,6 @@
 import SidePanel from "./components/SidePanel";
 import Pages from "./pages/Pages";
+import RightPanel from "./components/right-panel/RightPanel";
 
 import { Layout } from "./styles/Layout";
 
@@ -9,6 +10,8 @@ function App() {
       <SidePanel />
 
       {/* <Pages /> */}
+
+      <RightPanel />
     </Layout>
   );
 }
