@@ -25,6 +25,8 @@ function Discovery() {
       </Container>
 
       <Song />
+      <Song />
+      <Song />
 
       {/* <DisplayList>
         {isFetching && <DancingBars />}
