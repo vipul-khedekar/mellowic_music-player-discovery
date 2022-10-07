@@ -59,6 +59,7 @@ export const SecondaryText = styled.p`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -0.875rem;
 
   @media ${deviceSizes.tabletScreen} {
     display: none;
@@ -76,6 +77,7 @@ export const OptionsContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 0.5rem;
+  margin-top: 1rem;
 
   @media ${deviceSizes.tabletScreen} {
     display: flex;
