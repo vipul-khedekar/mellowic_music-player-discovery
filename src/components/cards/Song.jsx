@@ -1,3 +1,5 @@
+import { useDispatch } from "react-redux";
+
 import Temp from "../../assets/temp_placeholder.jpg";
 import {
   Container,
@@ -6,20 +8,28 @@ import {
   CoverArt,
   InfoContainer,
 } from "../../styles/components/SongStyled";
+import { playAndPause, setActiveSong } from "../../store/features/player";
 
 import PlayAndPause from "../PlayAndPause";
 
 function Song(props) {
   const { song, data, isPlaying, activeSong, i } = props;
 
-  function handlePlay() {}
+  const dispatch = useDispatch();
 
-  function handlePause() {}
+  function handlePlay() {
+    dispatch(setActiveSong({ song, data, i }));
+    dispatch(playAndPause(true));
+  }
+
+  function handlePause() {
+    dispatch(playAndPause(false));
+  }
 
   return (
     <Container>
       <RelativeContainer>
-        <HoverMask activeSong={activeSong}>
+        <HoverMask>
           <PlayAndPause
             song={song}
             isPlaying={isPlaying}
