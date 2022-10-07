@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { colors } from "../../assets/common";
+import { colors, sizes } from "../../assets/common";
 
 export const Container = styled.div`
   box-sizing: border-box;
@@ -9,14 +9,14 @@ export const Container = styled.div`
     ${colors.darkBerry},
     ${colors.lightBerry}
   );
-  width: 240px;
+  width: 220px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 0.125rem;
-  padding: 1rem;
-  opacity: 65%;
+  padding: 0.5rem;
+  opacity: 75%;
   cursor: pointer;
 `;
 
@@ -36,6 +36,33 @@ export const HoverMask = styled.div`
   &:hover {
     background-color: ${colors.darkBerry};
     border-radius: 0.125rem;
-    opacity: 50%;
+    opacity: 65%;
+  }
+`;
+
+export const CoverArt = styled.img`
+  height: 100%;
+  width: 100%;
+  border-radius: 0.125rem;
+  object-fit: cover;
+`;
+
+export const InfoContainer = styled.div`
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+
+  p {
+    margin: 0.125rem 0.25rem;
+
+    &:nth-child(2) {
+      font-size: ${sizes.small};
+    }
   }
 `;
