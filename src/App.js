@@ -1,10 +1,15 @@
+import SidePanel from "./components/SidePanel";
 import Pages from "./pages/Pages";
+
+import { Layout } from "./styles/Layout";
 
 function App() {
   return (
-    <div>
-      <Pages />
-    </div>
+    <Layout>
+      <SidePanel />
+
+      {/* <Pages /> */}
+    </Layout>
   );
 }
 
