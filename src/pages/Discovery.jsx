@@ -1,3 +1,5 @@
+import { useDispatch, useSelector } from "react-redux";
+
 import { ColumnContainer } from "../styles/Container";
 import { DisplayList } from "../styles/DisplayList";
 import { Container, BigText, Selection } from "../styles/pages/DiscoveryStyled";
@@ -10,7 +12,10 @@ import ResultsError from "../components/ResultsError";
 import Song from "../components/cards/Song";
 
 function Discovery() {
-  // const { data, isFetching, isError } = useGetTopChartsQuery();
+  const dispatch = useDispatch();
+  const { activeSong, isPlaying } = useSelector((state) => state.player);
+
+  const { data, isFetching, isError } = useGetTopChartsQuery();
 
   return (
     <ColumnContainer>
@@ -24,19 +29,26 @@ function Discovery() {
         </Selection>
       </Container>
 
-      <Song />
-      <Song />
-      <Song />
+      {/* <Song isPlaying={isPlaying} activeSong={activeSong} /> */}
 
-      {/* <DisplayList>
+      <DisplayList>
         {isFetching && <DancingBars />}
 
         {isError && <ResultsError />}
 
         {data?.map((song, i) => {
-          return <Song key={song.key} song={song} i={i} />;
+          return (
+            <Song
+              key={song.key}
+              i={i}
+              song={song}
+              data={data}
+              isPlaying={isPlaying}
+              activeSong={activeSong}
+            />
+          );
         })}
-      </DisplayList> */}
+      </DisplayList>
     </ColumnContainer>
   );
 }

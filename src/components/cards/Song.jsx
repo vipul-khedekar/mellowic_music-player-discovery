@@ -7,18 +7,32 @@ import {
   InfoContainer,
 } from "../../styles/components/SongStyled";
 
+import PlayAndPause from "../PlayAndPause";
+
 function Song(props) {
+  const { song, isPlaying, activeSong, i } = props;
+
+  function handlePlay() {}
+
+  function handlePause() {}
+
   return (
     <Container>
       <RelativeContainer>
-        <HoverMask />
+        <HoverMask>
+          <PlayAndPause
+            song={song}
+            handlePlay={handlePlay}
+            handlePause={handlePause}
+          />
+        </HoverMask>
 
-        <CoverArt src={Temp} alt="cover-art" />
+        <CoverArt src={song.images?.coverart} alt="cover-art" />
       </RelativeContainer>
 
       <InfoContainer>
-        <p>Song Title yaydyaikskfnkasdfll</p>
-        <p>Song Artists</p>
+        <p>{song.title}</p>
+        <p>{song.subtitle}</p>
       </InfoContainer>
     </Container>
   );
