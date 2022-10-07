@@ -27,6 +27,9 @@ export const RelativeContainer = styled.div`
 `;
 
 export const HoverMask = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0px;
   right: 0px;

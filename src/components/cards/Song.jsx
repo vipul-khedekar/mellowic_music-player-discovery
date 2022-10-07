@@ -19,7 +19,7 @@ function Song(props) {
   return (
     <Container>
       <RelativeContainer>
-        <HoverMask>
+        <HoverMask activeSong={activeSong}>
           <PlayAndPause
             song={song}
             isPlaying={isPlaying}
