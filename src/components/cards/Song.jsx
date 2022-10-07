@@ -10,7 +10,7 @@ import {
 import PlayAndPause from "../PlayAndPause";
 
 function Song(props) {
-  const { song, isPlaying, activeSong, i } = props;
+  const { song, data, isPlaying, activeSong, i } = props;
 
   function handlePlay() {}
 
@@ -22,6 +22,8 @@ function Song(props) {
         <HoverMask>
           <PlayAndPause
             song={song}
+            isPlaying={isPlaying}
+            activeSong={activeSong}
             handlePlay={handlePlay}
             handlePause={handlePause}
           />
