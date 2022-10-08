@@ -15,6 +15,15 @@ export const Container = styled.div`
   align-items: center;
   padding: 0.5rem;
   border-radius: 0.125rem;
+  cursor: pointer;
+
+  &:hover {
+    scale: 105%;
+  }
+
+  &:active {
+    scale: 98%;
+  }
 `;
 
 export const CoverArt = styled.img`

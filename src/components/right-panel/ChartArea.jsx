@@ -36,6 +36,8 @@ function ChartArea(props) {
               key={i}
               i={i}
               song={song}
+              isPlaying={isPlaying}
+              activeSongs={activeSongs}
               handlePlay={handlePlay}
               handlePause={handlePause}
             />
