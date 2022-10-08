@@ -2,14 +2,16 @@ import SidePanel from "./components/SidePanel";
 import Pages from "./pages/Pages";
 import RightPanel from "./components/right-panel/RightPanel";
 
-import { Layout } from "./styles/Layout";
+import { Layout, MiddlePanel } from "./styles/Layout";
 
 function App() {
   return (
     <Layout>
       <SidePanel />
 
-      {/* <Pages /> */}
+      <MiddlePanel>
+        <Pages />
+      </MiddlePanel>
 
       <RightPanel />
     </Layout>
