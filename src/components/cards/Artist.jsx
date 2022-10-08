@@ -1,15 +1,11 @@
 import { Container, Headshot } from "../../styles/components/ArtistStyled";
-import { MidText } from "../../styles/Text";
 
 function Artist(props) {
   const { artists, images } = props.artist;
-  console.log(artists, images);
 
   return (
-    <Container>
+    <Container to={`/artists/:${artists[0].adamid}`}>
       <Headshot src={images.background} alt="artist-headshot" />
-
-      <MidText>{artists.alias}</MidText>
     </Container>
   );
 }

@@ -1,12 +1,21 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const Container = styled.div`
+export const Container = styled(Link)`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
 `;
 
-export const Headshot = styled.img``;
+export const Headshot = styled.img`
+  height: auto;
+  width: 120px;
+  border-radius: 9999px;
+  opacity: 95%;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(140%);
+  }
+`;
