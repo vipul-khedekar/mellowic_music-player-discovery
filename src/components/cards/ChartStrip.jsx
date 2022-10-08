@@ -2,6 +2,7 @@ import {
   Container,
   CoverArt,
   TextContainer,
+  LinkStyled,
 } from "../../styles/components/ChartStripStyled";
 import { MidText, SmallText } from "../../styles/Text";
 
@@ -12,23 +13,28 @@ function ChartStrip(props) {
 
   return (
     <Container>
-      <CoverArt src={song?.images?.coverart} alt={song?.title || "cover-art"} />
+      <LinkStyled to={`/songs/${song.key}`}>
+        <CoverArt
+          src={song?.images?.coverart}
+          alt={song?.title || "cover-art"}
+        />
 
-      <TextContainer>
-        <MidText style={{ overflow: "hidden", textOverflow: "hidden" }}>
-          {song?.title.toUpperCase()}
-        </MidText>
+        <TextContainer>
+          <MidText style={{ overflow: "hidden", textOverflow: "hidden" }}>
+            {song?.title.toUpperCase()}
+          </MidText>
 
-        <SmallText
-          style={{
-            marginTop: "-1rem",
-            overflow: "hidden",
-            textOverflow: "hidden",
-          }}
-        >
-          {song?.subtitle.toUpperCase()}
-        </SmallText>
-      </TextContainer>
+          <SmallText
+            style={{
+              marginTop: "-1rem",
+              overflow: "hidden",
+              textOverflow: "hidden",
+            }}
+          >
+            {song?.subtitle.toUpperCase()}
+          </SmallText>
+        </TextContainer>
+      </LinkStyled>
 
       <PlayAndPause
         song={song}

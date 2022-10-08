@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import { colors } from "../../assets/common";
 
@@ -26,6 +27,14 @@ export const Container = styled.div`
   }
 `;
 
+export const LinkStyled = styled(Link)`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: ${colors.backdrop};
+`;
+
 export const CoverArt = styled.img`
   height: 100%;
   width: 20%;
@@ -33,6 +42,7 @@ export const CoverArt = styled.img`
 `;
 
 export const TextContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
