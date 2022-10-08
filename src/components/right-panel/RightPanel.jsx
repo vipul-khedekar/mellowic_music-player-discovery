@@ -9,11 +9,12 @@ import { useGetTopChartsQuery } from "../../store/services/shazamCore";
 
 function RightPanel() {
   const dispatch = useDispatch();
-  const { setActiveSong, isPlaying } = useSelector((state) => state.player);
+  const { activeSong, isPlaying } = useSelector((state) => state.player);
 
-  // const {data, isFetching, isError} = useGetTopChartsQuery()
+  const { data, isFetching, isError } = useGetTopChartsQuery();
 
-  // const topCharts = data?.substr(0, 5);
+  const topArtists = data?.slice(0, 8);
+  const topCharts = data?.slice(0, 5);
 
   // function handlePlay() {
   //   dispatch(playAndPause(true));
@@ -26,9 +27,17 @@ function RightPanel() {
 
   return (
     <Container>
-      <ArtistsArea />
+      <ArtistsArea
+        topArtists={topArtists}
+        isFetching={isFetching}
+        isError={isError}
+      />
 
-      <ChartArea />
+      <ChartArea
+        topCharts={topCharts}
+        isFetching={isFetching}
+        isError={isError}
+      />
     </Container>
   );
 }

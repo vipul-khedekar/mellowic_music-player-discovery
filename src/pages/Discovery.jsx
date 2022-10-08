@@ -13,7 +13,7 @@ import Song from "../components/cards/Song";
 
 function Discovery() {
   const dispatch = useDispatch();
-  const { activeSong, isPlaying } = useSelector((state) => state.player);
+  const { setActiveSong, isPlaying } = useSelector((state) => state.player);
 
   const { data, isFetching, isError } = useGetTopChartsQuery();
 
@@ -44,7 +44,7 @@ function Discovery() {
               song={song}
               data={data}
               isPlaying={isPlaying}
-              activeSong={activeSong}
+              setActiveSong={setActiveSong}
             />
           );
         })}

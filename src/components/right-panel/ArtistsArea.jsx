@@ -11,7 +11,11 @@ import {
 } from "../../styles/components/RightPanelStyled";
 import { List } from "../../styles/components/ArtistAreaStyled";
 
-function ArtistsArea() {
+import Artist from "../cards/Artist";
+
+function ArtistsArea(props) {
+  const { topArtists, isFetching, isError } = props;
+
   return (
     <Box>
       <Heading>
@@ -23,8 +27,8 @@ function ArtistsArea() {
       </Heading>
 
       <List>
-        {[1, 2, 3, 4, 5].map((artist) => {
-          return <p>{artist}</p>;
+        {topArtists?.map((artist, i) => {
+          return <Artist key={i} i={i} artist={artist} />;
         })}
       </List>
     </Box>
