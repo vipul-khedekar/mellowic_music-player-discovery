@@ -9,7 +9,7 @@ function App() {
     <Layout>
       <SidePanel />
 
-      <Pages />
+      {/* <Pages /> */}
 
       <RightPanel />
     </Layout>

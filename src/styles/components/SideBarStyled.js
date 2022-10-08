@@ -6,7 +6,7 @@ import { colors, deviceSizes } from "../../assets/common";
 export const Container = styled.div`
   box-sizing: border-box;
   height: 100vh;
-  width: 150px;
+  width: 180px;
   background: linear-gradient(
     105deg,
     ${colors.darkPeach},
@@ -18,14 +18,6 @@ export const Container = styled.div`
   align-items: center;
   padding: 0.5rem 0;
   color: ${colors.backdrop};
-
-  @media ${deviceSizes.tabletScreen} {
-    width: 80px;
-  }
-
-  @media ${deviceSizes.mobileScreen} {
-    display: none;
-  }
 `;
 
 export const LogoContainer = styled.div`
@@ -34,10 +26,6 @@ export const LogoContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-left: -10px;
-
-  @media ${deviceSizes.tabletScreen} {
-    margin-left: 0;
-  }
 `;
 
 export const Logo = styled.img`
@@ -60,14 +48,6 @@ export const SecondaryText = styled.p`
   justify-content: center;
   align-items: center;
   margin-top: -0.875rem;
-
-  @media ${deviceSizes.tabletScreen} {
-    display: none;
-  }
-
-  @media ${deviceSizes.mobileScreen} {
-    display: none;
-  }
 `;
 
 export const OptionsContainer = styled.div`
@@ -98,11 +78,6 @@ export const NavLinkStrip = styled(NavLink)`
   margin-left: 10px;
   text-decoration: none;
   color: ${colors.backdrop};
-
-  @media ${deviceSizes.tabletScreen} {
-    display: flex;
-    transform: rotate(-90deg);
-  }
 
   &:hover {
     width: 100%;
