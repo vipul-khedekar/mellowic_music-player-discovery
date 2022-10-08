@@ -5,15 +5,15 @@ import "swiper/css/free-mode";
 
 import { BigText, SmallText } from "../../styles/Text";
 import {
-  Container,
+  Box,
   Heading,
   LinkStyled,
-  List,
-} from "../../styles/components/ArtistAreaStyled";
+} from "../../styles/components/RightPanelStyled";
+import { List } from "../../styles/components/ArtistAreaStyled";
 
 function ArtistsArea() {
   return (
-    <Container>
+    <Box>
       <Heading>
         <BigText>Top Artists</BigText>
 
@@ -27,7 +27,7 @@ function ArtistsArea() {
           return <p>{artist}</p>;
         })}
       </List>
-    </Container>
+    </Box>
   );
 }
 
