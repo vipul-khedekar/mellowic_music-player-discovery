@@ -16,14 +16,14 @@ function RightPanel() {
   const topArtists = data?.slice(0, 8);
   const topCharts = data?.slice(0, 5);
 
-  // function handlePlay() {
-  //   dispatch(playAndPause(true));
-  //   dispatch(setActiveSong({ data }));
-  // }
+  function handlePlay() {
+    dispatch(playAndPause(true));
+    dispatch(setActiveSong({ data }));
+  }
 
-  // function handlePause() {
-  //   dispatch(playAndPause(false));
-  // }
+  function handlePause() {
+    dispatch(playAndPause(false));
+  }
 
   return (
     <Container>
@@ -37,6 +37,10 @@ function RightPanel() {
         topCharts={topCharts}
         isFetching={isFetching}
         isError={isError}
+        activeSong={activeSong}
+        isPlaying={isPlaying}
+        handlePlay={handlePlay}
+        handlePause={handlePause}
       />
     </Container>
   );

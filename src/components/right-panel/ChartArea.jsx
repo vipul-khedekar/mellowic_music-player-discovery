@@ -6,7 +6,19 @@ import {
 } from "../../styles/components/RightPanelStyled";
 import { List } from "../../styles/components/ChartAreaStyled";
 
-function ChartArea() {
+import ChartStrip from "../cards/ChartStrip";
+
+function ChartArea(props) {
+  const {
+    topCharts,
+    isFetching,
+    isError,
+    isPlaying,
+    activeSongs,
+    handlePlay,
+    handlePause,
+  } = props;
+
   return (
     <Box>
       <Heading>
@@ -18,8 +30,15 @@ function ChartArea() {
       </Heading>
 
       <List>
-        {[1, 2, 3, 4, 5].map((song) => {
-          return <p>{song}</p>;
+        {topCharts?.map((song, i) => {
+          return (
+            <ChartStrip
+              key={i}
+              song={song}
+              handlePlay={handlePlay}
+              handlePause={handlePause}
+            />
+          );
         })}
       </List>
     </Box>
