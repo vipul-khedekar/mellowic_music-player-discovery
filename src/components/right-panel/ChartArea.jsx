@@ -34,6 +34,7 @@ function ChartArea(props) {
           return (
             <ChartStrip
               key={i}
+              i={i}
               song={song}
               handlePlay={handlePlay}
               handlePause={handlePause}
