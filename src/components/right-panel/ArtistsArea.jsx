@@ -26,11 +26,22 @@ function ArtistsArea(props) {
         </LinkStyled>
       </Heading>
 
-      <List>
+      <Swiper
+        slidesPerView="auto"
+        spaceBetween={15}
+        freeMode
+        centeredSlides
+        centeredSlidesBounds
+        modules={[FreeMode]}
+      >
         {topArtists?.map((artist, i) => {
-          return <Artist key={i} i={i} artist={artist} />;
+          return (
+            <SwiperSlide key={i} style={{ width: "12%", height: "auto" }}>
+              <Artist i={i} artist={artist} />
+            </SwiperSlide>
+          );
         })}
-      </List>
+      </Swiper>
     </Box>
   );
 }
