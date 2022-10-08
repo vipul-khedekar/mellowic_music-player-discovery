@@ -27,12 +27,12 @@ function ArtistsArea(props) {
       </Heading>
 
       <Swiper
-        slidesPerView="auto"
-        spaceBetween={15}
+        slidesPerView="2.75"
         freeMode
         centeredSlides
         centeredSlidesBounds
         modules={[FreeMode]}
+        style={{ width: "100%" }}
       >
         {topArtists?.map((artist, i) => {
           return (

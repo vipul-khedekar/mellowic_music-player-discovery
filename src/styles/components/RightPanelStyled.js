@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { colors } from "../../assets/common";
 
 export const Container = styled.div`
-  width: 360px;
+  width: 380px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
