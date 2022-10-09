@@ -1,5 +1,33 @@
-function DetailsHeader() {
-  return <div>DetailsHeader</div>;
+import {
+  Container,
+  Gradient,
+  Image,
+  TextContainer,
+} from "../../styles/components/DetailsHeaderStyled";
+import { BigText, MidText, SmallText } from "../../styles/Text";
+
+function DetailsHeader(props) {
+  const { songData } = props;
+
+  return (
+    <Container>
+      <Gradient />
+
+      <Image src={songData.images?.coverart} alt="cover-image" />
+
+      <TextContainer>
+        <BigText style={{ whiteSpace: "nowrap" }}>{songData.title}</BigText>
+
+        <MidText style={{ margin: "-0.5rem 0", whiteSpace: "nowrap" }}>
+          {songData.subtitle}
+        </MidText>
+
+        <SmallText style={{ whiteSpace: "nowrap" }}>
+          {songData.genres.primary}
+        </SmallText>
+      </TextContainer>
+    </Container>
+  );
 }
 
 export default DetailsHeader;

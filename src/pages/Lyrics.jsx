@@ -21,7 +21,7 @@ function Lyrics() {
 
   return (
     <ColumnContainer>
-      <DetailsHeader />
+      <DetailsHeader songData={songData} />
 
       <LyricsContainer>
         <BigText>Lyrics:</BigText>
