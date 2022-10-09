@@ -8,19 +8,26 @@ import { BigText, MidText } from "../styles/Text";
 
 import DancingBars from "../components/loaders/DancingBars";
 import ResultsError from "../components/ResultsError";
+import DetailsHeader from "../components/cards/DetailsHeader";
 
 function Lyrics() {
   const songKey = useParams();
 
-  const { data, isFetching, isError } = useGetSongDetailsQuery(songKey);
+  const {
+    data: songData,
+    isFetching,
+    isError,
+  } = useGetSongDetailsQuery(songKey);
 
   return (
     <ColumnContainer>
+      <DetailsHeader />
+
       <LyricsContainer>
         <BigText>Lyrics:</BigText>
 
-        {data?.sections[1].type === "LYRICS" ? (
-          data?.sections[1].text.map((line, i) => {
+        {songData?.sections[1].type === "LYRICS" ? (
+          songData?.sections[1].text.map((line, i) => {
             return <MidText>{line}</MidText>;
           })
         ) : (
