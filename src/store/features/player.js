@@ -6,6 +6,7 @@ const initialState = {
   activeSong: {},
   currentIndex: 0,
   currentSongs: [],
+  selectedGenre: ``,
 };
 
 const playerSlice = createSlice({
@@ -29,6 +30,10 @@ const playerSlice = createSlice({
 
       state.currentIndex = action.payload.i;
       state.isActive = true;
+    },
+
+    selectGenre: (state, action) => {
+      state.selectedGenre = action.payload;
     },
   },
 });
