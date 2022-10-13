@@ -1,6 +1,7 @@
 import SidePanel from "./components/SidePanel";
 import Pages from "./pages/Pages";
 import RightPanel from "./components/right-panel/RightPanel";
+import SearchBar from "./components/SearchBar";
 
 import { Layout, MiddlePanel } from "./styles/Layout";
 
@@ -10,7 +11,9 @@ function App() {
       <SidePanel />
 
       <MiddlePanel>
-        <Pages />
+        <SearchBar />
+
+        {/* <Pages /> */}
       </MiddlePanel>
 
       <RightPanel />
