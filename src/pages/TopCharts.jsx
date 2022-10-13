@@ -11,7 +11,7 @@ import ResultsError from "../components/ResultsError";
 import Song from "../components/cards/Song";
 
 function TopCharts() {
-  const { setActiveSong, isPlaying } = useSelector((state) => state.player);
+  const { activeSong, isPlaying } = useSelector((state) => state.player);
 
   const { data, isFetching, isError } = useGetTopChartsQuery();
 
@@ -32,7 +32,7 @@ function TopCharts() {
               song={song}
               data={data}
               isPlaying={isPlaying}
-              setActiveSong={setActiveSong}
+              activeSong={activeSong}
             />
           );
         })}

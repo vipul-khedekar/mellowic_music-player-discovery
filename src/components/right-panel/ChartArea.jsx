@@ -14,7 +14,7 @@ function ChartArea(props) {
     isFetching,
     isError,
     isPlaying,
-    activeSongs,
+    activeSong,
     handlePlay,
     handlePause,
   } = props;
@@ -37,7 +37,7 @@ function ChartArea(props) {
               i={i}
               song={song}
               isPlaying={isPlaying}
-              activeSongs={activeSongs}
+              activeSong={activeSong}
               handlePlay={handlePlay}
               handlePause={handlePause}
             />

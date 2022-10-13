@@ -9,7 +9,7 @@ import { MidText, SmallText } from "../../styles/Text";
 import PlayAndPause from "../PlayAndPause";
 
 function ChartStrip(props) {
-  const { song, i, isPlaying, activeSongs, handlePlay, handlePause } = props;
+  const { song, i, isPlaying, activeSong, handlePlay, handlePause } = props;
 
   return (
     <Container>
@@ -39,7 +39,7 @@ function ChartStrip(props) {
       <PlayAndPause
         song={song}
         isPlaying={isPlaying}
-        activeSongs={activeSongs}
+        activeSong={activeSong}
         handlePlay={handlePlay}
         handlePause={handlePause}
       />
