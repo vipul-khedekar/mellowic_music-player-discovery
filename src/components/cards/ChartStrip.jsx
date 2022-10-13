@@ -1,3 +1,4 @@
+import { useDispatch } from "react-redux";
 import {
   Container,
   CoverArt,
@@ -7,9 +8,22 @@ import {
 import { MidText, SmallText } from "../../styles/Text";
 
 import PlayAndPause from "../PlayAndPause";
+// import { PlayAndPause } from "../PlayAndPause";
+import { setActiveSong, playAndPause } from "../../store/features/player";
 
 function ChartStrip(props) {
-  const { song, i, isPlaying, activeSong, handlePlay, handlePause } = props;
+  const { song, data, i, isPlaying, activeSong } = props;
+
+  const dispatch = useDispatch();
+
+  function handlePlay() {
+    dispatch(playAndPause(true));
+    dispatch(setActiveSong({ data, song, i }));
+  }
+
+  function handlePause() {
+    dispatch(playAndPause(false));
+  }
 
   return (
     <Container>

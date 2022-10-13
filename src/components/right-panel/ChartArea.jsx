@@ -9,15 +9,7 @@ import { List } from "../../styles/components/ChartAreaStyled";
 import ChartStrip from "../cards/ChartStrip";
 
 function ChartArea(props) {
-  const {
-    topCharts,
-    isFetching,
-    isError,
-    isPlaying,
-    activeSong,
-    handlePlay,
-    handlePause,
-  } = props;
+  const { topCharts, data, isFetching, isError, isPlaying, activeSong } = props;
 
   return (
     <Box>
@@ -36,10 +28,9 @@ function ChartArea(props) {
               key={i}
               i={i}
               song={song}
+              data={data}
               isPlaying={isPlaying}
               activeSong={activeSong}
-              handlePlay={handlePlay}
-              handlePause={handlePause}
             />
           );
         })}

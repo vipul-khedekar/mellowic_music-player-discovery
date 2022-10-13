@@ -3,8 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { Container } from "../../styles/components/RightPanelStyled";
 import ChartArea from "./ChartArea";
 import ArtistsArea from "./ArtistsArea";
-import { PlayAndPause } from "../PlayAndPause";
-import { setActiveSong, playAndPause } from "../../store/features/player";
 import { useGetTopChartsQuery } from "../../store/services/shazamCore";
 
 function RightPanel() {
@@ -15,15 +13,6 @@ function RightPanel() {
 
   const topArtists = data?.slice(0, 8);
   const topCharts = data?.slice(0, 5);
-
-  function handlePlay() {
-    dispatch(playAndPause(true));
-    dispatch(setActiveSong({ data }));
-  }
-
-  function handlePause() {
-    dispatch(playAndPause(false));
-  }
 
   return (
     <Container>
@@ -39,8 +28,7 @@ function RightPanel() {
         isError={isError}
         activeSong={activeSong}
         isPlaying={isPlaying}
-        handlePlay={handlePlay}
-        handlePause={handlePause}
+        data={data}
       />
     </Container>
   );
