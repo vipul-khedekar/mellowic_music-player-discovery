@@ -2,6 +2,13 @@ import styled from "styled-components";
 
 import { colors, sizes, deviceSizes } from "../../assets/common";
 
+export const ParentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+`;
+
 export const Container = styled.div`
   width: 100%;
   display: flex;

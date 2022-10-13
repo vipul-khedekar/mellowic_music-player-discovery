@@ -1,11 +1,16 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { ColumnContainer } from "../styles/Container";
+import {
+  ParentContainer,
+  Container,
+  BigText,
+  Selection,
+} from "../styles/pages/DiscoveryStyled";
 import { DisplayList } from "../styles/DisplayList";
-import { Container, BigText, Selection } from "../styles/pages/DiscoveryStyled";
 
 import { genres } from "../assets/constants";
-import { useGetTopChartsQuery } from "../store/services/shazamCore";
+import { selectGenre } from "../store/features/player";
+import { useGetSongsByGenreQuery } from "../store/services/shazamCore";
 
 import DancingBars from "../components/loaders/DancingBars";
 import ResultsError from "../components/ResultsError";
@@ -14,22 +19,29 @@ import Song from "../components/cards/Song";
 function Discovery() {
   const dispatch = useDispatch();
   const { setActiveSong, isPlaying } = useSelector((state) => state.player);
-
-  const { data, isFetching, isError } = useGetTopChartsQuery();
+  const { selectedGenre } = useSelector((state) => state.player);
+  const { data, isFetching, isError } = useGetSongsByGenreQuery(
+    selectedGenre || `ROCK`
+  );
 
   return (
-    <ColumnContainer>
+    <ParentContainer>
       <Container>
         <BigText>Discovery</BigText>
 
-        <Selection>
+        <Selection
+          onChange={(e) => dispatch(selectGenre(e.target.value))}
+          value={selectedGenre || `Rock`}
+        >
           {genres.map((genre) => {
-            return <option>{genre.title}</option>;
+            return (
+              <option key={genre.value} value={genre.value}>
+                {genre.title}
+              </option>
+            );
           })}
         </Selection>
       </Container>
-
-      {/* <Song isPlaying={isPlaying} activeSong={activeSong} /> */}
 
       <DisplayList>
         {isFetching && <DancingBars />}
@@ -49,7 +61,7 @@ function Discovery() {
           );
         })}
       </DisplayList>
-    </ColumnContainer>
+    </ParentContainer>
   );
 }
 
