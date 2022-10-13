@@ -6,6 +6,7 @@ import TopArtists from "./TopArtists";
 import Lyrics from "./Lyrics";
 import ArtistInfo from "./ArtistInfo";
 import AroundYou from "./AroundYou";
+import SearchResults from "./SearchResults";
 
 function Pages() {
   return (
@@ -17,6 +18,7 @@ function Pages() {
         <Route path="/around-you" element={<AroundYou />} />
         <Route path="/songs/:key" element={<Lyrics />} />
         <Route path="/artists/:key" element={<ArtistInfo />} />
+        <Route path="/search-result/:searchQuery" element={<SearchResults />} />
       </Routes>
     </main>
   );
