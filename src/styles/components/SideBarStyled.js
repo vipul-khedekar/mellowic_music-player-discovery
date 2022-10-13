@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { colors, deviceSizes } from "../../assets/common";
 
@@ -69,11 +69,11 @@ export const OptionsContainer = styled.div`
   }
 `;
 
-export const NavLinkStrip = styled(NavLink)`
+export const LinkStrip = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
   border-radius: 0.125rem;
   margin-left: 10px;
   text-decoration: none;
@@ -84,4 +84,9 @@ export const NavLinkStrip = styled(NavLink)`
     background-color: ${colors.lightPeach};
     scale: 110%;
   }
+`;
+
+export const ColumnContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `;

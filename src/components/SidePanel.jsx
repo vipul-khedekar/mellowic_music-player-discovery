@@ -1,5 +1,9 @@
-import { useState } from "react";
-import { IoAnalyticsOutline, IoNavigate, IoStarHalf } from "react-icons/io5";
+import {
+  IoAnalyticsOutline,
+  IoNavigate,
+  IoStarHalf,
+  IoGlassesSharp,
+} from "react-icons/io5";
 
 import LogoImage from "../assets/logo.png";
 import {
@@ -9,8 +13,10 @@ import {
   LogoText,
   SecondaryText,
   OptionsContainer,
-  NavLinkStrip,
+  LinkStrip,
+  ColumnContainer,
 } from "../styles/components/SideBarStyled";
+import { MidText, SmallText } from "../styles/Text";
 
 function SidePanel() {
   return (
@@ -25,20 +31,34 @@ function SidePanel() {
       </LogoContainer>
 
       <OptionsContainer>
-        <NavLinkStrip to={`/`}>
+        <LinkStrip to={`/`}>
           <IoNavigate size={20} />
-          <p>Discovery</p>
-        </NavLinkStrip>
 
-        <NavLinkStrip to={`/top-artists`}>
-          <IoStarHalf size={20} />
-          <p>Top Artists</p>
-        </NavLinkStrip>
+          <MidText>Discovery</MidText>
+        </LinkStrip>
 
-        <NavLinkStrip to={`/top-charts`}>
+        <LinkStrip to={`/top-charts`}>
           <IoAnalyticsOutline size={20} />
-          <p>Top Charts</p>
-        </NavLinkStrip>
+
+          <MidText>Top Charts</MidText>
+        </LinkStrip>
+
+        <LinkStrip to={`/top-artists`}>
+          <IoStarHalf size={20} />
+
+          <MidText>Top Artists</MidText>
+        </LinkStrip>
+
+        <LinkStrip to={`/around-you`}>
+          <IoGlassesSharp size={20} />
+
+          <ColumnContainer>
+            <MidText>Around You</MidText>
+            <SmallText style={{ marginTop: "-1rem" }}>
+              (Location Based)
+            </SmallText>
+          </ColumnContainer>
+        </LinkStrip>
       </OptionsContainer>
     </Container>
   );
