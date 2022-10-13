@@ -13,7 +13,7 @@ function App() {
       <MiddlePanel>
         <SearchBar />
 
-        {/* <Pages /> */}
+        <Pages />
       </MiddlePanel>
 
       <RightPanel />
