@@ -5,7 +5,7 @@ import {
   IoGlassesSharp,
 } from "react-icons/io5";
 
-import LogoImage from "../assets/logo.png";
+import LogoImage from "../assets/logo.svg";
 
 import { MidText, SmallText } from "../styles/Text";
 import {
@@ -35,27 +35,27 @@ function SidePanel() {
         <LinkStrip to={`/`}>
           <IoNavigate size={20} />
 
-          <MidText>Discovery</MidText>
+          <MidText style={{ fontSize: "1.25rem" }}>Discovery</MidText>
         </LinkStrip>
 
         <LinkStrip to={`/top-charts`}>
           <IoAnalyticsOutline size={20} />
 
-          <MidText>Top Charts</MidText>
+          <MidText style={{ fontSize: "1.25rem" }}>Top Charts</MidText>
         </LinkStrip>
 
         <LinkStrip to={`/top-artists`}>
           <IoStarHalf size={20} />
 
-          <MidText>Top Artists</MidText>
+          <MidText style={{ fontSize: "1.25rem" }}>Top Artists</MidText>
         </LinkStrip>
 
         <LinkStrip to={`/around-you`}>
           <IoGlassesSharp size={20} />
 
           <ColumnContainer>
-            <MidText>Around You</MidText>
-            <SmallText style={{ marginTop: "-1rem" }}>
+            <MidText style={{ fontSize: "1.25rem" }}>Around You</MidText>
+            <SmallText style={{ marginTop: "-1.75rem" }}>
               (Location Based)
             </SmallText>
           </ColumnContainer>

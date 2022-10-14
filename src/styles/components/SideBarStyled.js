@@ -27,12 +27,13 @@ export const LogoContainer = styled(Link)`
   align-items: center;
   margin-left: -10px;
   color: ${colors.backdrop};
+  text-decoration: none;
 `;
 
 export const Logo = styled.img`
   height: auto;
   width: 80px;
-  margin-bottom: -0.5rem;
+  margin-bottom: -1.5rem;
   object-fit: cover;
 `;
 
@@ -41,6 +42,9 @@ export const LogoText = styled.p`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: var(--righteous);
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
 `;
 
 export const SecondaryText = styled.p`
@@ -48,7 +52,8 @@ export const SecondaryText = styled.p`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -0.875rem;
+  margin-top: -1.25rem;
+  font-family: var(--righteous);
 `;
 
 export const OptionsContainer = styled.div`
@@ -59,6 +64,7 @@ export const OptionsContainer = styled.div`
   align-items: flex-start;
   gap: 0.5rem;
   margin-top: 1rem;
+  font-weight: bold;
 
   @media ${deviceSizes.tabletScreen} {
     display: flex;
