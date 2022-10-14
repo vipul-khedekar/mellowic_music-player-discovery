@@ -1,8 +1,8 @@
-import { Container } from "../styles/pages/TopArtistsStyled";
+import { useGetTopChartsQuery } from "../store/services/shazamCore";
+
 import { DisplayList } from "../styles/DisplayList";
 import { VeryBigText } from "../styles/Text";
-
-import { useGetTopChartsQuery } from "../store/services/shazamCore";
+import { Container } from "../styles/pages/TopArtistsStyled";
 
 import DancingBars from "../components/loaders/DancingBars";
 import ResultsError from "../components/ResultsError";

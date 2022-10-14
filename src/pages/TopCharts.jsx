@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
 
+import { useGetTopChartsQuery } from "../store/services/shazamCore";
+
 import { VeryBigText } from "../styles/Text";
 import { DisplayList } from "../styles/DisplayList";
 import { Container } from "../styles/pages/TopChartsStyled";
-
-import { useGetTopChartsQuery } from "../store/services/shazamCore";
 
 import DancingBars from "../components/loaders/DancingBars";
 import ResultsError from "../components/ResultsError";
@@ -12,7 +12,6 @@ import Song from "../components/cards/Song";
 
 function TopCharts() {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
-
   const { data, isFetching, isError } = useGetTopChartsQuery();
 
   return (

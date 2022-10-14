@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import { Container } from "../styles/pages/SearchResultsStyled";
+import { useGetSongsAsSearchedQuery } from "../store/services/shazamCore";
+
 import { VeryBigText } from "../styles/Text";
 import { DisplayList } from "../styles/DisplayList";
-
-import { useGetSongsAsSearchedQuery } from "../store/services/shazamCore";
+import { Container } from "../styles/pages/SearchResultsStyled";
 
 import ResultsError from "../components/ResultsError";
 import DancingBar from "../components/loaders/DancingBars";
@@ -13,6 +13,7 @@ import Song from "../components/cards/Song";
 
 function SearchResults() {
   const { searchQuery } = useParams();
+
   const { activeSong, isPlaying } = useSelector((state) => state.player);
   const { data, isFetching, isError } = useGetSongsAsSearchedQuery(searchQuery);
 

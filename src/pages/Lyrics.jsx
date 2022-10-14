@@ -2,9 +2,9 @@ import { useParams } from "react-router-dom";
 
 import { useGetSongDetailsQuery } from "../store/services/shazamCore";
 
-import { LyricsContainer } from "../styles/pages/LyricsStyled";
 import { ColumnContainer } from "../styles/Container";
 import { BigText, MidText } from "../styles/Text";
+import { LyricsContainer } from "../styles/pages/LyricsStyled";
 
 import DancingBars from "../components/loaders/DancingBars";
 import ResultsError from "../components/ResultsError";

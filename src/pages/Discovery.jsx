@@ -1,16 +1,17 @@
 import { useDispatch, useSelector } from "react-redux";
 
+import { useGetSongsByGenreQuery } from "../store/services/shazamCore";
+import { selectGenre } from "../store/features/player";
+
+import { genres } from "../assets/constants";
+
+import { DisplayList } from "../styles/DisplayList";
 import {
   ParentContainer,
   Container,
   BigText,
   Selection,
 } from "../styles/pages/DiscoveryStyled";
-import { DisplayList } from "../styles/DisplayList";
-
-import { genres } from "../assets/constants";
-import { selectGenre } from "../store/features/player";
-import { useGetSongsByGenreQuery } from "../store/services/shazamCore";
 
 import DancingBars from "../components/loaders/DancingBars";
 import ResultsError from "../components/ResultsError";
@@ -18,6 +19,7 @@ import Song from "../components/cards/Song";
 
 function Discovery() {
   const dispatch = useDispatch();
+
   const { setActiveSong, isPlaying } = useSelector((state) => state.player);
   const { selectedGenre } = useSelector((state) => state.player);
   const { data, isFetching, isError } = useGetSongsByGenreQuery(

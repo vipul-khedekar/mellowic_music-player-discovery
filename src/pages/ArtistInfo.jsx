@@ -1,4 +1,3 @@
-import {} from "../styles/pages/ArtistInfoStyled";
 import { useParams } from "react-router-dom";
 
 import { useGetArtistDetailsQuery } from "../store/services/shazamCore";
@@ -7,7 +6,6 @@ import { Container } from "../styles/pages/ArtistInfoStyled";
 
 import DancingBars from "../components/loaders/DancingBars";
 import ResultsError from "../components/ResultsError";
-
 import DetailsHeader from "../components/cards/DetailsHeader";
 
 function ArtistInfo() {

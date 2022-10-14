@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import { useSelector } from "react-redux";
+import axios from "axios";
+
+import { useGetSongsByLocationQuery } from "../store/services/shazamCore";
+
+import { DisplayList } from "../styles/DisplayList";
+import { BigText, VeryBigText } from "../styles/Text";
+import { Container } from "../styles/pages/AroundYouStyled";
 
 import DancingBars from "../components/loaders/DancingBars";
 import ResultsError from "../components/ResultsError";
 import Song from "../components/cards/Song";
-
-import { useGetSongsByLocationQuery } from "../store/services/shazamCore";
-
-import { Container } from "../styles/pages/AroundYouStyled";
-import { BigText, VeryBigText } from "../styles/Text";
-import { DisplayList } from "../styles/DisplayList";
 
 function AroundYou() {
   const [location, setLocation] = useState(``);
