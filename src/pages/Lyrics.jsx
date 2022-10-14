@@ -2,9 +2,8 @@ import { useParams } from "react-router-dom";
 
 import { useGetSongDetailsQuery } from "../store/services/shazamCore";
 
-import { ColumnContainer } from "../styles/Container";
 import { BigText, MidText } from "../styles/Text";
-import { LyricsContainer } from "../styles/pages/LyricsStyled";
+import { Container, LyricsContainer } from "../styles/pages/LyricsStyled";
 
 import RippleEffect from "../components/loaders/RippleEffect";
 import DetailsHeader from "../components/cards/DetailsHeader";
@@ -19,7 +18,7 @@ function Lyrics() {
   } = useGetSongDetailsQuery(songKey);
 
   return (
-    <ColumnContainer>
+    <Container>
       <DetailsHeader songData={songData} />
 
       <LyricsContainer>
@@ -41,7 +40,7 @@ function Lyrics() {
           <MidText>Whoops! No lyrics available...</MidText>
         )}
       </LyricsContainer>
-    </ColumnContainer>
+    </Container>
   );
 }
 
