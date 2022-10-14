@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 
 import { setActiveSong, playAndPause } from "../../store/features/player";
 
-import { MidText, SmallText } from "../../styles/Text";
+import { BigText, MidText } from "../../styles/Text";
 import {
   Container,
   CoverArt,
@@ -35,19 +35,19 @@ function ChartStrip(props) {
         />
 
         <TextContainer>
-          <MidText style={{ overflow: "hidden", textOverflow: "hidden" }}>
+          <BigText style={{ overflow: "hidden", textOverflow: "hidden" }}>
             {song?.title.toUpperCase()}
-          </MidText>
+          </BigText>
 
-          <SmallText
+          <MidText
             style={{
-              marginTop: "-1rem",
+              marginTop: "-1.5rem",
               overflow: "hidden",
               textOverflow: "hidden",
             }}
           >
             {song?.subtitle.toUpperCase()}
-          </SmallText>
+          </MidText>
         </TextContainer>
       </LinkStyled>
 

@@ -37,7 +37,7 @@ export const LinkStyled = styled(Link)`
 
 export const CoverArt = styled.img`
   height: 100%;
-  width: 20%;
+  width: 25%;
   object-fit: cover;
 `;
 

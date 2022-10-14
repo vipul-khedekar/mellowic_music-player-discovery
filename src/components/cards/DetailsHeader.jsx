@@ -1,6 +1,6 @@
 import DefaultImage from "../../assets/default-image.jpg";
 
-import { BigText, MidText, SmallText } from "../../styles/Text";
+import { VeryBigText, BigText, SmallText } from "../../styles/Text";
 import {
   Container,
   Gradient,
@@ -27,13 +27,13 @@ function DetailsHeader(props) {
       />
 
       <TextContainer>
-        <BigText style={{ whiteSpace: "nowrap" }}>
+        <VeryBigText style={{ whiteSpace: "nowrap" }}>
           {songData?.title || artistData?.artists[artistKey].attributes?.name}
-        </BigText>
+        </VeryBigText>
 
-        <MidText style={{ margin: "-0.5rem 0", whiteSpace: "nowrap" }}>
+        <BigText style={{ margin: "-1rem 0", whiteSpace: "nowrap" }}>
           {songData?.subtitle || ""}
-        </MidText>
+        </BigText>
 
         <SmallText style={{ whiteSpace: "nowrap" }}>
           {songData?.genres.primary ||
