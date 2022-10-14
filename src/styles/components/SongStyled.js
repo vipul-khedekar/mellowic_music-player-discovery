@@ -17,7 +17,7 @@ export const Container = styled.div`
 
   &:hover {
     scale: 105%;
-    filter: brightness(110%);
+    filter: brightness(125%);
   }
 
   &:active {
