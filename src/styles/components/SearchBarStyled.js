@@ -20,7 +20,7 @@ export const Input = styled.input`
   padding-left: 2rem;
   margin-top: 0.5rem;
   border: none;
-  border-bottom: 0.125rem solid ${colors.orangish};
+  border-bottom: 0.125rem solid ${colors.yellowish};
   border-radius: 0.125rem;
   outline: none;
   color: ${colors.letters};

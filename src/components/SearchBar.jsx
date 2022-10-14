@@ -29,7 +29,7 @@ function SearchBar() {
 
       <IoSearchSharp
         style={{
-          color: colors.orangish,
+          color: colors.yellowish,
           fontSize: "1.5rem",
           position: "absolute",
           left: "0.75rem",

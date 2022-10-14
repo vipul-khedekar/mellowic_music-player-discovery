@@ -22,11 +22,11 @@ export const BigText = styled.h2`
 `;
 
 export const Selection = styled.select`
-  background-color: ${colors.orangish};
+  background-color: ${colors.yellowish};
   padding: 0.125rem 0.25rem;
   border: none;
   border-radius: 0.125rem;
-  color: ${colors.letters};
+  color: ${colors.backdrop};
   font-size: ${sizes.medium};
 
   @media ${deviceSizes.mobileScreen} {
