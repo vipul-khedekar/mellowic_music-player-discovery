@@ -9,7 +9,7 @@ import Song from "../components/cards/Song";
 import { useGetSongsByLocationQuery } from "../store/services/shazamCore";
 
 import { Container } from "../styles/pages/AroundYouStyled";
-import { VeryBigText } from "../styles/Text";
+import { BigText, VeryBigText } from "../styles/Text";
 import { DisplayList } from "../styles/DisplayList";
 
 function AroundYou() {
@@ -39,18 +39,25 @@ function AroundYou() {
       {isError && location !== `` && <ResultsError />}
 
       <DisplayList>
-        {data?.map((song, i) => {
-          return (
-            <Song
-              key={song.key}
-              i={i}
-              song={song}
-              data={data}
-              isPlaying={isPlaying}
-              activeSong={activeSong}
-            />
-          );
-        })}
+        {location ? (
+          data?.map((song, i) => {
+            return (
+              <Song
+                key={song.key}
+                i={i}
+                song={song}
+                data={data}
+                isPlaying={isPlaying}
+                activeSong={activeSong}
+              />
+            );
+          })
+        ) : (
+          <BigText>
+            Unable to fetch data. Request blocked by user's adblocker. Please
+            disable it and try again.
+          </BigText>
+        )}
       </DisplayList>
     </Container>
   );
