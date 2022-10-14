@@ -7,7 +7,7 @@ import {
   RelativeContainer,
   HoverMask,
   CoverArt,
-  InfoContainer,
+  LinkStyled,
   Title,
   ArtistName,
 } from "../../styles/components/SongStyled";
@@ -44,11 +44,11 @@ function Song(props) {
         <CoverArt src={song.images?.coverart} alt="cover-art" />
       </RelativeContainer>
 
-      <InfoContainer>
+      <LinkStyled to={`/songs/${song.key}`}>
         <Title>{song.title}</Title>
 
         <ArtistName>{song.subtitle}</ArtistName>
-      </InfoContainer>
+      </LinkStyled>
     </Container>
   );
 }

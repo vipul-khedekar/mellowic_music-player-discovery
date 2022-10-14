@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import { colors, sizes } from "../../assets/common";
 
@@ -56,7 +57,7 @@ export const CoverArt = styled.img`
   object-fit: cover;
 `;
 
-export const InfoContainer = styled.div`
+export const LinkStyled = styled(Link)`
   height: 40px;
   width: 100%;
   display: flex;
@@ -64,6 +65,7 @@ export const InfoContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
   margin-top: 0.25rem;
+  color: ${colors.letters};
   white-space: nowrap;
   overflow: hidden;
 `;
