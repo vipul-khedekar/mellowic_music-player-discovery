@@ -20,12 +20,13 @@ export const Container = styled.div`
   color: ${colors.backdrop};
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(Link)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: -10px;
+  color: ${colors.backdrop};
 `;
 
 export const Logo = styled.img`

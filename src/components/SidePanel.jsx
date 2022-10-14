@@ -22,7 +22,7 @@ import {
 function SidePanel() {
   return (
     <Container>
-      <LogoContainer>
+      <LogoContainer to={`/`}>
         <Logo src={LogoImage} alt="logo" />
 
         <div>
