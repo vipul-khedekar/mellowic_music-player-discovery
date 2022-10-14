@@ -8,6 +8,7 @@ export const DisplayList = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  padding: 0.25rem;
   margin: 0.5rem 0 0;
   overflow: scroll;
 
