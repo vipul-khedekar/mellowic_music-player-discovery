@@ -3,7 +3,7 @@ import { FreeMode } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 
-import { BigText, MidText, SmallText } from "../../styles/Text";
+import { VeryBigText, MidText, SmallText } from "../../styles/Text";
 import {
   Box,
   Heading,
@@ -19,7 +19,7 @@ function ArtistsArea(props) {
   return (
     <Box>
       <Heading>
-        <BigText>Top Artists</BigText>
+        <VeryBigText>Top Artists</VeryBigText>
 
         <LinkStyled to={`/top-artists`}>
           <SmallText>See more...</SmallText>

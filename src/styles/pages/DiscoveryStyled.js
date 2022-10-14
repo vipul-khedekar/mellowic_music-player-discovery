@@ -16,11 +16,6 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const BigText = styled.h2`
-  font-weight: bold;
-  font-size: ${sizes.xlarge};
-`;
-
 export const Selection = styled.select`
   background-color: ${colors.yellowish};
   padding: 0.125rem 0.25rem;

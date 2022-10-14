@@ -9,8 +9,8 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 1rem 1rem 0;
 `;
 
 export const Box = styled.div`

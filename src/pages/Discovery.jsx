@@ -6,10 +6,10 @@ import { selectGenre } from "../store/features/player";
 import { genres } from "../assets/constants";
 
 import { DisplayList } from "../styles/DisplayList";
+import { VeryBigText } from "../styles/Text";
 import {
   ParentContainer,
   Container,
-  BigText,
   Selection,
 } from "../styles/pages/DiscoveryStyled";
 
@@ -29,7 +29,7 @@ function Discovery() {
   return (
     <ParentContainer>
       <Container>
-        <BigText>Discovery</BigText>
+        <VeryBigText>Discovery</VeryBigText>
 
         <Selection
           onChange={(e) => dispatch(selectGenre(e.target.value))}

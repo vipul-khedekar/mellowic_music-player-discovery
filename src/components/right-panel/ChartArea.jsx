@@ -1,4 +1,4 @@
-import { BigText, MidText, SmallText } from "../../styles/Text";
+import { VeryBigText, MidText, SmallText } from "../../styles/Text";
 import { List } from "../../styles/components/ChartAreaStyled";
 import {
   Box,
@@ -15,7 +15,7 @@ function ChartArea(props) {
   return (
     <Box>
       <Heading>
-        <BigText>Top 5 Songs</BigText>
+        <VeryBigText>Top 5 Songs</VeryBigText>
 
         <LinkStyled to={`/top-charts`}>
           <SmallText>See more...</SmallText>

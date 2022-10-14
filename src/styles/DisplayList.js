@@ -3,13 +3,13 @@ import styled from "styled-components";
 import { colors } from "../assets/common";
 
 export const DisplayList = styled.div`
-  height: 83vh;
+  box-sizing: border-box;
+  height: 82.5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 0.25rem;
-  margin: 0.5rem 0 0;
   overflow: scroll;
 
   //Custom scrollbar (Firefox and Edge doesn't support)
