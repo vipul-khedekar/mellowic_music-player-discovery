@@ -6,5 +6,4 @@ export const Container = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 1rem;
 `;
