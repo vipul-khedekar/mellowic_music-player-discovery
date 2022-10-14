@@ -8,6 +8,8 @@ import {
   HoverMask,
   CoverArt,
   InfoContainer,
+  Title,
+  ArtistName,
 } from "../../styles/components/SongStyled";
 
 import PlayAndPause from "../PlayAndPause";
@@ -43,8 +45,9 @@ function Song(props) {
       </RelativeContainer>
 
       <InfoContainer>
-        <p>{song.title}</p>
-        <p>{song.subtitle}</p>
+        <Title>{song.title}</Title>
+
+        <ArtistName>{song.subtitle}</ArtistName>
       </InfoContainer>
     </Container>
   );
