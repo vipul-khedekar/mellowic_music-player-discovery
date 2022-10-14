@@ -6,9 +6,9 @@ function PlayAndPause(props) {
   return (
     <div>
       {isPlaying && activeSong?.title === song.title ? (
-        <IoPauseCircle size={40} onClick={() => handlePause()} />
+        <IoPauseCircle onClick={() => handlePause()} size={40} />
       ) : (
-        <IoPlayCircle size={40} onClick={() => handlePlay()} />
+        <IoPlayCircle onClick={() => handlePlay()} size={40} />
       )}
     </div>
   );

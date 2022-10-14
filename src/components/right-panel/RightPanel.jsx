@@ -24,11 +24,11 @@ function RightPanel() {
 
       <ChartArea
         topCharts={topCharts}
+        data={data}
         isFetching={isFetching}
         isError={isError}
         activeSong={activeSong}
         isPlaying={isPlaying}
-        data={data}
       />
     </Container>
   );

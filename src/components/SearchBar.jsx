@@ -10,11 +10,11 @@ function SearchBar() {
 
   const [searchQuery, setSearchQuery] = useState(``);
 
-  function handleSearch(e) {
+  const handleSearch = (e) => {
     e.preventDefault();
     navigateTo(`/search-result/${searchQuery}`);
     setSearchQuery(``);
-  }
+  };
 
   return (
     <Form onSubmit={(e) => handleSearch(e)} autoComplete="off">
@@ -23,9 +23,8 @@ function SearchBar() {
         value={searchQuery}
         type="search"
         placeholder="Search for songs"
-        autoComplete="off"
         id="search-field"
-        name="search-field"
+        autoComplete="off"
       />
 
       <IoSearchSharp
