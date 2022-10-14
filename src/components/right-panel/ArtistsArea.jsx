@@ -3,13 +3,14 @@ import { FreeMode } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 
-import { BigText, SmallText } from "../../styles/Text";
+import { BigText, MidText, SmallText } from "../../styles/Text";
 import {
   Box,
   Heading,
   LinkStyled,
 } from "../../styles/components/RightPanelStyled";
 
+import RippleEffect from "../loaders/RippleEffect";
 import Artist from "../cards/Artist";
 
 function ArtistsArea(props) {
@@ -33,6 +34,14 @@ function ArtistsArea(props) {
         centeredSlides
         centeredSlidesBounds
       >
+        {isFetching && <RippleEffect />}
+
+        {isError && (
+          <MidText>
+            Something went wrong while fetching artists. Please try again...
+          </MidText>
+        )}
+
         {topArtists?.map((artist, i) => {
           return (
             <SwiperSlide key={i} style={{ width: "12%", height: "auto" }}>

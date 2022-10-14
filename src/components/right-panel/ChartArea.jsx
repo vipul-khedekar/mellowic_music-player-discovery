@@ -1,4 +1,4 @@
-import { BigText, SmallText } from "../../styles/Text";
+import { BigText, MidText, SmallText } from "../../styles/Text";
 import { List } from "../../styles/components/ChartAreaStyled";
 import {
   Box,
@@ -6,6 +6,7 @@ import {
   LinkStyled,
 } from "../../styles/components/RightPanelStyled";
 
+import RippleEffect from "../loaders/RippleEffect";
 import ChartStrip from "../cards/ChartStrip";
 
 function ChartArea(props) {
@@ -14,7 +15,7 @@ function ChartArea(props) {
   return (
     <Box>
       <Heading>
-        <BigText>Top Charts</BigText>
+        <BigText>Top 5 Songs</BigText>
 
         <LinkStyled to={`/top-charts`}>
           <SmallText>See more...</SmallText>
@@ -22,6 +23,14 @@ function ChartArea(props) {
       </Heading>
 
       <List>
+        {isFetching && <RippleEffect />}
+
+        {isError && (
+          <MidText>
+            Something went wrong when fetching top songs. Please try again...
+          </MidText>
+        )}
+
         {topCharts?.map((song, i) => {
           return (
             <ChartStrip

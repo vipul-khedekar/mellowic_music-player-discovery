@@ -6,8 +6,7 @@ import { ColumnContainer } from "../styles/Container";
 import { BigText, MidText } from "../styles/Text";
 import { LyricsContainer } from "../styles/pages/LyricsStyled";
 
-import DancingBars from "../components/loaders/DancingBars";
-import ResultsError from "../components/ResultsError";
+import RippleEffect from "../components/loaders/RippleEffect";
 import DetailsHeader from "../components/cards/DetailsHeader";
 
 function Lyrics() {
@@ -25,6 +24,14 @@ function Lyrics() {
 
       <LyricsContainer>
         <BigText>Lyrics:</BigText>
+
+        {isFetching && <RippleEffect />}
+
+        {isError && (
+          <MidText>
+            Something went wrong while fetch lyrics. Please try again...
+          </MidText>
+        )}
 
         {songData?.sections[1].type === "LYRICS" ? (
           songData?.sections[1].text.map((line, i) => {
