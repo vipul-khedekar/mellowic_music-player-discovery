@@ -15,8 +15,11 @@ export const Container = styled.div`
 `;
 
 export const LyricsContainer = styled.div`
+  height: 70vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow-y: scroll;
 `;
