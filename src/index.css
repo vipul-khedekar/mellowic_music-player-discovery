@@ -2,6 +2,9 @@
     --backdrop: #462445;
     --letters: #fceae6;
     --darkBerry: #673653;
+
+    --baloo2: 'Baloo 2', sans-serif;
+    --righteous: 'Righteous', cursive;
 }
 
 html,
@@ -16,4 +19,5 @@ body {
     height: 100vh;
     width: 100vw;
     color: var(--letters);
+    font-family: var(--baloo2);
 }
