@@ -20,7 +20,7 @@ import Song from "../components/cards/Song";
 function Discovery() {
   const dispatch = useDispatch();
 
-  const { setActiveSong, isPlaying } = useSelector((state) => state.player);
+  const { activeSong, isPlaying } = useSelector((state) => state.player);
   const { selectedGenre } = useSelector((state) => state.player);
   const { data, isFetching, isError } = useGetSongsByGenreQuery(
     selectedGenre || `ROCK`
@@ -58,7 +58,7 @@ function Discovery() {
               song={song}
               data={data}
               isPlaying={isPlaying}
-              setActiveSong={setActiveSong}
+              activeSong={activeSong}
             />
           );
         })}
