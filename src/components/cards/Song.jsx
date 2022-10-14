@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 
-import Temp from "../../assets/temp_placeholder.jpg";
+import { playAndPause, setActiveSong } from "../../store/features/player";
+
 import {
   Container,
   RelativeContainer,
@@ -8,14 +9,13 @@ import {
   CoverArt,
   InfoContainer,
 } from "../../styles/components/SongStyled";
-import { playAndPause, setActiveSong } from "../../store/features/player";
 
 import PlayAndPause from "../PlayAndPause";
 
 function Song(props) {
-  const { song, data, isPlaying, activeSong, i } = props;
-
   const dispatch = useDispatch();
+
+  const { song, data, isPlaying, activeSong, i } = props;
 
   function handlePlay() {
     dispatch(setActiveSong({ song, data, i }));

@@ -2,11 +2,12 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { IoSearchSharp } from "react-icons/io5";
 
-import { Form, Input } from "../styles/components/SearchBarStyled";
 import { colors } from "../assets/common";
+import { Form, Input } from "../styles/components/SearchBarStyled";
 
 function SearchBar() {
   const navigateTo = useNavigate();
+
   const [searchQuery, setSearchQuery] = useState(``);
 
   function handleSearch(e) {

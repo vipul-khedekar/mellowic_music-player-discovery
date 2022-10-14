@@ -1,10 +1,10 @@
 import { BigText, SmallText } from "../../styles/Text";
+import { List } from "../../styles/components/ChartAreaStyled";
 import {
   Box,
   Heading,
   LinkStyled,
 } from "../../styles/components/RightPanelStyled";
-import { List } from "../../styles/components/ChartAreaStyled";
 
 import ChartStrip from "../cards/ChartStrip";
 

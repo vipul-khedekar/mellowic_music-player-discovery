@@ -1,9 +1,9 @@
-import SidePanel from "./components/SidePanel";
+import { Layout, MiddlePanel } from "./styles/Layout";
+
 import Pages from "./pages/Pages";
+import SidePanel from "./components/SidePanel";
 import RightPanel from "./components/right-panel/RightPanel";
 import SearchBar from "./components/SearchBar";
-
-import { Layout, MiddlePanel } from "./styles/Layout";
 
 function App() {
   return (

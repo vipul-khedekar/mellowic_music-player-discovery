@@ -6,6 +6,8 @@ import {
 } from "react-icons/io5";
 
 import LogoImage from "../assets/logo.png";
+
+import { MidText, SmallText } from "../styles/Text";
 import {
   Container,
   LogoContainer,
@@ -16,7 +18,6 @@ import {
   LinkStrip,
   ColumnContainer,
 } from "../styles/components/SideBarStyled";
-import { MidText, SmallText } from "../styles/Text";
 
 function SidePanel() {
   return (

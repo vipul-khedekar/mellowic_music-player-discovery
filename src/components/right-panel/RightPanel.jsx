@@ -1,14 +1,14 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
-import { Container } from "../../styles/components/RightPanelStyled";
-import ChartArea from "./ChartArea";
-import ArtistsArea from "./ArtistsArea";
 import { useGetTopChartsQuery } from "../../store/services/shazamCore";
 
-function RightPanel() {
-  const dispatch = useDispatch();
-  const { activeSong, isPlaying } = useSelector((state) => state.player);
+import { Container } from "../../styles/components/RightPanelStyled";
 
+import ArtistsArea from "./ArtistsArea";
+import ChartArea from "./ChartArea";
+
+function RightPanel() {
+  const { activeSong, isPlaying } = useSelector((state) => state.player);
   const { data, isFetching, isError } = useGetTopChartsQuery();
 
   const topArtists = data?.slice(0, 8);

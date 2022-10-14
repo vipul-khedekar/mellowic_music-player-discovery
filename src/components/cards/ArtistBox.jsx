@@ -1,5 +1,5 @@
-import { Container, Image } from "../../styles/components/ArtistBoxStyled";
 import { MidText } from "../../styles/Text";
+import { Container, Image } from "../../styles/components/ArtistBoxStyled";
 
 function ArtistBox(props) {
   const { images, subtitle, artists } = props.artist;

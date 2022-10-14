@@ -9,7 +9,6 @@ import {
   Heading,
   LinkStyled,
 } from "../../styles/components/RightPanelStyled";
-import { List } from "../../styles/components/ArtistAreaStyled";
 
 import Artist from "../cards/Artist";
 

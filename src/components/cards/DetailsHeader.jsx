@@ -1,12 +1,12 @@
+import DefaultImage from "../../assets/default-image.jpg";
+
+import { BigText, MidText, SmallText } from "../../styles/Text";
 import {
   Container,
   Gradient,
   Image,
   TextContainer,
 } from "../../styles/components/DetailsHeaderStyled";
-import { BigText, MidText, SmallText } from "../../styles/Text";
-
-import DefaultImage from "../../assets/default-image.jpg";
 
 function DetailsHeader(props) {
   const { songData, artistData, artistKey } = props;
