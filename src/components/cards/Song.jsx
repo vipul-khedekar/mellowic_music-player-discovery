@@ -17,14 +17,14 @@ function Song(props) {
 
   const { song, data, isPlaying, activeSong, i } = props;
 
-  function handlePlay() {
+  const handlePlay = () => {
     dispatch(setActiveSong({ song, data, i }));
     dispatch(playAndPause(true));
-  }
+  };
 
-  function handlePause() {
+  const handlePause = () => {
     dispatch(playAndPause(false));
-  }
+  };
 
   return (
     <Container>

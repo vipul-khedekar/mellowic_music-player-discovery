@@ -17,14 +17,14 @@ function ChartStrip(props) {
 
   const { song, data, i, isPlaying, activeSong } = props;
 
-  function handlePlay() {
+  const handlePlay = () => {
     dispatch(playAndPause(true));
     dispatch(setActiveSong({ data, song, i }));
-  }
+  };
 
-  function handlePause() {
+  const handlePause = () => {
     dispatch(playAndPause(false));
-  }
+  };
 
   return (
     <Container>
