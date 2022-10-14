@@ -31,8 +31,8 @@ export const LinkStyled = styled(Link)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-decoration: none;
   color: ${colors.backdrop};
+  text-decoration: none;
 `;
 
 export const CoverArt = styled.img`

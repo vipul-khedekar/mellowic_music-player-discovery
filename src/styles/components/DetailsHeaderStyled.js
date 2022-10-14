@@ -20,9 +20,9 @@ export const Gradient = styled.div`
   height: 100px;
   width: 100%;
   background: linear-gradient(-65deg, ${colors.darkPeach}, transparent);
-  opacity: 60%;
   position: absolute;
   z-index: 10;
+  opacity: 60%;
 `;
 
 export const Image = styled.img`
@@ -30,11 +30,11 @@ export const Image = styled.img`
   width: 125px;
   border: 0.25rem solid ${colors.lightPeach};
   border-radius: 9999px;
-  object-fit: cover;
   position: absolute;
   z-index: 20;
   top: 0.5rem;
   left: 0.125rem;
+  object-fit: cover;
 
   &:hover {
     filter: brightness(125%);
@@ -50,6 +50,6 @@ export const TextContainer = styled.div`
   position: absolute;
   z-index: 20;
   left: 9rem;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
 `;
