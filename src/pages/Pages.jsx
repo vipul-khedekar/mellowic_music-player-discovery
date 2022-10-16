@@ -13,11 +13,17 @@ function Pages() {
     <main>
       <Routes>
         <Route path="/" element={<Discovery />} />
+
         <Route path="/top-charts" element={<TopCharts />} />
+
         <Route path="/top-artists" element={<TopArtists />} />
+
         <Route path="/around-you" element={<AroundYou />} />
+
         <Route path="/songs/:key" element={<Lyrics />} />
+
         <Route path="/artists/:key" element={<ArtistInfo />} />
+
         <Route path="/search-result/:searchQuery" element={<SearchResults />} />
       </Routes>
     </main>

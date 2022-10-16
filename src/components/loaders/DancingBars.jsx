@@ -25,6 +25,7 @@ function DancingBars() {
           repeatCount="indefinite"
         />
       </rect>
+
       <rect x="30" y="10" width="15" height="120" rx="6">
         <animate
           attributeName="height"
@@ -43,6 +44,7 @@ function DancingBars() {
           repeatCount="indefinite"
         />
       </rect>
+
       <rect x="60" width="15" height="140" rx="6">
         <animate
           attributeName="height"
@@ -61,6 +63,7 @@ function DancingBars() {
           repeatCount="indefinite"
         />
       </rect>
+
       <rect x="90" y="10" width="15" height="120" rx="6">
         <animate
           attributeName="height"
@@ -79,6 +82,7 @@ function DancingBars() {
           repeatCount="indefinite"
         />
       </rect>
+
       <rect x="120" y="10" width="15" height="120" rx="6">
         <animate
           attributeName="height"

@@ -55,6 +55,7 @@ function SidePanel() {
 
           <ColumnContainer>
             <MidText style={{ fontSize: "1.25rem" }}>Around You</MidText>
+
             <SmallText style={{ marginTop: "-1.75rem" }}>
               (Location Based)
             </SmallText>
