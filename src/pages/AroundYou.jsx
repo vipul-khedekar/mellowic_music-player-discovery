@@ -54,8 +54,8 @@ function AroundYou() {
           })
         ) : (
           <BigText>
-            Unable to fetch data. Request blocked by user's adblocker. Please
-            disable it and try again.
+            Unable to fetch data. Request blocked by user's ad-blocker or
+            firewall. Please disable it and try again.
           </BigText>
         )}
       </DisplayList>
