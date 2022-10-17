@@ -18,7 +18,7 @@ function DetailsHeader(props) {
       <Image
         src={
           songData?.images?.coverart ||
-          artistData?.artists[artistKey].attributes?.artwork?.url
+          artistData?.artists[artistKey]?.attributes?.artwork?.url
             .replace("{h}", "500")
             .replace("{w}", "500") ||
           DefaultImage
@@ -28,7 +28,7 @@ function DetailsHeader(props) {
 
       <TextContainer>
         <VeryBigText style={{ whiteSpace: "nowrap" }}>
-          {songData?.title || artistData?.artists[artistKey].attributes?.name}
+          {songData?.title || artistData?.artists[artistKey]?.attributes?.name}
         </VeryBigText>
 
         <BigText style={{ margin: "-1rem 0", whiteSpace: "nowrap" }}>
@@ -37,7 +37,7 @@ function DetailsHeader(props) {
 
         <SmallText style={{ whiteSpace: "nowrap" }}>
           {songData?.genres.primary ||
-            artistData?.artists[artistKey].attributes?.genreNames[0]}
+            artistData?.artists[artistKey]?.attributes?.genreNames[0]}
         </SmallText>
       </TextContainer>
     </Container>
