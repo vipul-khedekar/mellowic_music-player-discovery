@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { colors } from "../../assets/common";
 
-export const Container = styled.div`
+export const Container = styled.section`
   box-sizing: border-box;
   height: 100px;
   width: 100%;

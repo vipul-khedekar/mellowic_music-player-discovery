@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { deviceSizes } from "../../assets/common";
 
-export const Container = styled.div`
+export const Container = styled.article`
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 `;
 
-export const LyricsContainer = styled.div`
+export const LyricsContainer = styled.section`
   height: 70vh;
   width: 100%;
   display: flex;

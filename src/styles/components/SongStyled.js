@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { colors, sizes } from "../../assets/common";
 
-export const Container = styled.div`
+export const Container = styled.article`
   box-sizing: border-box;
   background: linear-gradient(60deg, ${colors.darkBerry}, ${colors.lightBerry});
   width: 220px;

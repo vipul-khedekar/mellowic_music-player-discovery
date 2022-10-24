@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { colors } from "../../assets/common";
 
-export const Container = styled.div`
+export const Container = styled.article`
   width: 380px;
   display: flex;
   flex-direction: column;
@@ -13,13 +13,13 @@ export const Container = styled.div`
   padding: 1rem 1rem 0;
 `;
 
-export const Box = styled.div`
+export const Box = styled.article`
   width: 100%;
   display: flex;
   flex-direction: column;
 `;
 
-export const Heading = styled.div`
+export const Heading = styled.header`
   width: 100%;
   display: flex;
   justify-content: space-between;

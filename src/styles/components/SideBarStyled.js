@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { colors, deviceSizes } from "../../assets/common";
 
-export const Container = styled.div`
+export const Container = styled.aside`
   box-sizing: border-box;
   height: 100vh;
   width: 180px;

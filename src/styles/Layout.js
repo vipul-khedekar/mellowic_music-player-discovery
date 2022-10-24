@@ -6,7 +6,7 @@ export const Layout = styled.main`
   gap: 1rem;
 `;
 
-export const MiddlePanel = styled.div`
+export const MiddlePanel = styled.section`
   height: 100vh;
   width: 70vw;
   display: flex;
