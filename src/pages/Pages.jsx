@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
+import { Main } from "../styles/pages/PagesStyled";
+
 import Discovery from "./Discovery";
 import TopCharts from "./TopCharts";
 import TopArtists from "./TopArtists";
@@ -10,7 +12,7 @@ import SearchResults from "./SearchResults";
 
 function Pages() {
   return (
-    <main>
+    <Main>
       <Routes>
         <Route path="/" element={<Discovery />} />
 
@@ -26,7 +28,7 @@ function Pages() {
 
         <Route path="/search-result/:searchQuery" element={<SearchResults />} />
       </Routes>
-    </main>
+    </Main>
   );
 }
 
