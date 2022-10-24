@@ -23,18 +23,20 @@ function TopCharts() {
 
         {isError && <ResultsError />}
 
-        {data?.map((song, i) => {
-          return (
-            <Song
-              key={song.key}
-              i={i}
-              song={song}
-              data={data}
-              isPlaying={isPlaying}
-              activeSong={activeSong}
-            />
-          );
-        })}
+        {!isFetching &&
+          !isError &&
+          data?.map((song, i) => {
+            return (
+              <Song
+                key={song.key}
+                i={i}
+                song={song}
+                data={data}
+                isPlaying={isPlaying}
+                activeSong={activeSong}
+              />
+            );
+          })}
       </DisplayList>
     </Container>
   );

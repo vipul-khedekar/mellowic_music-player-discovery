@@ -20,9 +20,11 @@ function Discovery() {
 
         {isError && <ResultsError />}
 
-        {artists?.map((artist) => {
-          return <ArtistBox key={artist.key} artist={artist} />;
-        })}
+        {!isFetching &&
+          !isError &&
+          artists?.map((artist) => {
+            return <ArtistBox key={artist.key} artist={artist} />;
+          })}
       </DisplayList>
     </Container>
   );

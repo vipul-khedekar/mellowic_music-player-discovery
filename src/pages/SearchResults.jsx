@@ -28,18 +28,20 @@ function SearchResults() {
       {isError && <ResultsError />}
 
       <DisplayList>
-        {results?.map((song, i) => {
-          return (
-            <Song
-              key={song.key}
-              i={i}
-              song={song}
-              data={data}
-              isPlaying={isPlaying}
-              activeSong={activeSong}
-            />
-          );
-        })}
+        {!isFetching &&
+          !isError &&
+          results?.map((song, i) => {
+            return (
+              <Song
+                key={song.key}
+                i={i}
+                song={song}
+                data={data}
+                isPlaying={isPlaying}
+                activeSong={activeSong}
+              />
+            );
+          })}
       </DisplayList>
     </Container>
   );
