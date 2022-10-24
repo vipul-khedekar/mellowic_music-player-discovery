@@ -32,13 +32,13 @@ function Lyrics() {
           </MidText>
         )}
 
-        {songData?.sections[1].type === "LYRICS" ? (
-          songData?.sections[1].text.map((line, i) => {
-            return <MidText>{line}</MidText>;
-          })
-        ) : (
-          <MidText>Whoops! No lyrics available...</MidText>
-        )}
+        {songData?.sections[1].type === "LYRICS"
+          ? !isFetching &&
+            !isError &&
+            songData?.sections[1].text.map((line, i) => {
+              return <MidText>{line}</MidText>;
+            })
+          : isError && <MidText>Whoops! No lyrics available...</MidText>}
       </LyricsContainer>
     </Container>
   );

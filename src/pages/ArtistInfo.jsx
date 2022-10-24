@@ -27,7 +27,9 @@ function ArtistInfo() {
         </MidText>
       )}
 
-      <DetailsHeader artistData={artistData} artistKey={artistKey.key} />
+      {!isFetching && !isError && (
+        <DetailsHeader artistData={artistData} artistKey={artistKey.key} />
+      )}
     </Container>
   );
 }
