@@ -26,6 +26,14 @@ function ArtistsArea(props) {
         </LinkStyled>
       </Heading>
 
+      {isFetching && <RippleEffect />}
+
+      {isError && (
+        <MidText>
+          Something went wrong while fetching artists. Please try again...
+        </MidText>
+      )}
+
       <Swiper
         slidesPerView="2.75"
         style={{ width: "100%" }}
@@ -34,14 +42,6 @@ function ArtistsArea(props) {
         centeredSlides
         centeredSlidesBounds
       >
-        {isFetching && <RippleEffect />}
-
-        {isError && (
-          <MidText>
-            Something went wrong while fetching artists. Please try again...
-          </MidText>
-        )}
-
         {topArtists?.map((artist, i) => {
           return (
             <SwiperSlide key={i} style={{ width: "12%", height: "auto" }}>
