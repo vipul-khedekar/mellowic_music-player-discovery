@@ -35,8 +35,16 @@ function Lyrics() {
         {songData?.sections[1].type === "LYRICS"
           ? !isFetching &&
             !isError &&
-            songData?.sections[1].text.map((line, i) => {
-              return <MidText>{line}</MidText>;
+            songData?.sections[1].text.map((line) => {
+              return (
+                <MidText>
+                  {line.length !== 0 ? (
+                    line
+                  ) : (
+                    <MidText>No lyrics found for this song.</MidText>
+                  )}
+                </MidText>
+              );
             })
           : isError && <MidText>Whoops! No lyrics available...</MidText>}
       </LyricsContainer>
