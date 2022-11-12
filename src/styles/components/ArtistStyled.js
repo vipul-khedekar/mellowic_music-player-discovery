@@ -6,6 +6,7 @@ export const Container = styled(Link)`
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
+  cursor: grab;
 `;
 
 export const Headshot = styled.img`
@@ -13,9 +14,5 @@ export const Headshot = styled.img`
   width: 120px;
   border-radius: 9999px;
   opacity: 95%;
-  cursor: pointer;
-
-  &:hover {
-    filter: brightness(140%);
-  }
+  cursor: grab;
 `;
