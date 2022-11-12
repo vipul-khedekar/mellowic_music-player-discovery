@@ -36,7 +36,9 @@ function ChartStrip(props) {
 
         <TextContainer>
           <BigText style={{ overflow: "hidden", textOverflow: "hidden" }}>
-            {song?.title.toUpperCase()}
+            {song?.title.length < 22
+              ? song?.title.toUpperCase()
+              : song?.title.substr(0, 22).concat(`...`)}
           </BigText>
 
           <MidText
@@ -46,7 +48,9 @@ function ChartStrip(props) {
               textOverflow: "hidden",
             }}
           >
-            {song?.subtitle.toUpperCase()}
+            {song?.subtitle.length < 25
+              ? song?.subtitle.toUpperCase()
+              : song?.subtitle.substr(0, 24).concat(`...`)}
           </MidText>
         </TextContainer>
       </LinkStyled>
