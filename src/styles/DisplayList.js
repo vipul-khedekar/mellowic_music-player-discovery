@@ -8,5 +8,5 @@ export const DisplayList = styled.div`
   justify-content: center;
   gap: 2rem;
   padding: 0.25rem;
-  overflow-y: scroll;
+  overflow-y: auto;
 `;
