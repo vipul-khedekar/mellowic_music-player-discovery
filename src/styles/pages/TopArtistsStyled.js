@@ -5,5 +5,4 @@ export const Container = styled.article`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
 `;
