@@ -18,6 +18,14 @@ export const Container = styled.aside`
   align-items: center;
   padding: 0.5rem 0;
   color: ${colors.backdrop};
+
+  @media ${deviceSizes.tabletScreen} {
+    display: none;
+  }
+
+  @media ${deviceSizes.mobileScreen} {
+    display: none;
+  }
 `;
 
 export const LogoContainer = styled(Link)`
