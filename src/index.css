@@ -1,23 +1,31 @@
 :root {
-    --backdrop: #462445;
-    --letters: #fceae6;
-    --darkBerry: #673653;
+  --backdrop: #462445;
+  --letters: #fceae6;
+  --darkBerry: #673653;
+  --yellowish: #fec252;
+  --orangish: #ed6a56;
 
-    --baloo2: 'Baloo 2', sans-serif;
-    --righteous: 'Righteous', cursive;
+  --baloo2: "Baloo 2", sans-serif;
+  --righteous: "Righteous", cursive;
+}
+
+* {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--orangish) var(--yellowish);
 }
 
 html,
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background: linear-gradient(to bottom, var(--backdrop), var(--darkBerry));
-    height: 100vh;
-    width: 100vw;
-    color: var(--letters);
-    font-family: var(--baloo2);
+  background: linear-gradient(to bottom, var(--backdrop), var(--darkBerry));
+  height: 100vh;
+  width: 100vw;
+  color: var(--letters);
+  font-family: var(--baloo2);
 }
