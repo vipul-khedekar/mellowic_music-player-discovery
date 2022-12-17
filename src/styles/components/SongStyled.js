@@ -6,7 +6,7 @@ import { colors, sizes } from "../../assets/common";
 export const Container = styled.article`
   box-sizing: border-box;
   background: linear-gradient(60deg, ${colors.darkBerry}, ${colors.lightBerry});
-  width: 220px;
+  width: 208px;
   display: flex;
   flex-direction: column;
   justify-content: center;

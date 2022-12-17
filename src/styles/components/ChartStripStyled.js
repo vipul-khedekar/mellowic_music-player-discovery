@@ -10,13 +10,14 @@ export const Container = styled.article`
     ${colors.darkPeach},
     ${colors.lightPeach}
   );
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
   border-radius: 0.125rem;
   cursor: pointer;
+  transition: 0.5s;
 
   &:hover {
     scale: 105%;

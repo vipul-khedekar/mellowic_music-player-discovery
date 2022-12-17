@@ -4,13 +4,13 @@ import { colors } from "../assets/common";
 
 export const DisplayList = styled.div`
   box-sizing: border-box;
-  height: 82.5vh;
+  height: 80vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 0.25rem;
-  overflow: scroll;
+  overflow-y: scroll;
 
   //Custom scrollbar (Firefox and Edge doesn't support)
   &::-webkit-scrollbar {

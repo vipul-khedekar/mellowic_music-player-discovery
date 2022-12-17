@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import { colors } from "../../assets/common";
 
 export const Container = styled.article`
-  width: 380px;
+  width: 360px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
-  padding: 1rem 1rem 0;
+  padding: 0 1rem;
 `;
 
 export const Box = styled.article`
@@ -24,6 +24,7 @@ export const Heading = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: -0.25rem;
 `;
 
 export const LinkStyled = styled(Link)`
