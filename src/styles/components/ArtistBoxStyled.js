@@ -19,6 +19,11 @@ export const Container = styled(Link)`
   padding: 0.25rem;
   border-radius: 0.125rem;
   color: ${colors.backdrop};
+  transition: 0.3s;
+
+  &:hover {
+    scale: 105%;
+  }
 `;
 
 export const Image = styled.img`

@@ -14,6 +14,7 @@ export const Container = styled.article`
   border-radius: 0.125rem;
   padding: 0.5rem;
   cursor: pointer;
+  transition: 0.3s;
 
   &:hover {
     scale: 105%;
