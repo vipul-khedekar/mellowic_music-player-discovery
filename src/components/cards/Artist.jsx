@@ -3,8 +3,6 @@ import { Container, Headshot } from "../../styles/components/ArtistStyled";
 function Artist(props) {
   const { artists, images } = props.artist;
 
-  console.log(props.artist);
-
   return (
     <>
       {artists ? (
