@@ -1,3 +1,5 @@
+import DefaultAlbumArt from "../../assets/default-album-art.webp";
+
 import { useDispatch } from "react-redux";
 
 import { playAndPause, setActiveSong } from "../../store/features/player";
@@ -41,7 +43,10 @@ function Song(props) {
           />
         </HoverMask>
 
-        <CoverArt src={song.images?.coverart} alt="cover-art" />
+        <CoverArt
+          src={song.images?.coverart || DefaultAlbumArt}
+          alt="cover-art"
+        />
       </RelativeContainer>
 
       <LinkStyled to={`/songs/${song.key}`}>

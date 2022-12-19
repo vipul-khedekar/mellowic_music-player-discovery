@@ -1,3 +1,5 @@
+import DefaultAlbumArt from "../../assets/default-album-art.webp";
+
 import { useDispatch } from "react-redux";
 
 import { setActiveSong, playAndPause } from "../../store/features/player";
@@ -30,7 +32,7 @@ function ChartStrip(props) {
     <Container>
       <LinkStyled to={`/songs/${song.key}`}>
         <CoverArt
-          src={song?.images?.coverart}
+          src={song?.images?.coverart || DefaultAlbumArt}
           alt={song?.title || "cover-art"}
         />
 
