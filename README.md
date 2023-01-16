@@ -6,4 +6,4 @@
 
 **Discover trending music, top artists, and lyrics. Shows now playing or paused song using icon toggles. Get location-based recommendations or filter by genres from a great collection of music libraries. All these features are packed in one super-app, with a 4-color 7-toned sleek modern look.**
 
-**Tech Used: ReactJS, Redux Toolkit, Javascript, Styled Components, React Router, Axios, React Icons, RapidAPI, HTML, CSS and SASS/SCSS.**
+**Tech Used: ReactJS, Redux Toolkit, Javascript, Styled Components, SwiperJS, React Router, Axios, React Icons, RapidAPI, HTML, CSS and SASS/SCSS.**
