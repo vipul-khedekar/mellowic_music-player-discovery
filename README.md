@@ -7,3 +7,18 @@
 **Discover trending music, top artists, and lyrics. Shows now playing or paused song using icon toggles. Get location-based recommendations or filter by genres from a great collection of music libraries. All these features are packed in one super-app, with a 4-color 7-toned sleek modern look.**
 
 **Tech Used: ReactJS, Redux Toolkit, Javascript, Styled Components, SwiperJS, React Router, Axios, React Icons, RapidAPI, HTML, CSS and SASS/SCSS.**
+
+# 👉 Colors Used
+
+_(Source: Imagination. I just named them whatever I wanted, because why not.) 🤷_
+
+| Colors      | Hex Code |
+| ----------- | -------- |
+| Backdrop    | #462445  |
+| Letters     | #fceae6  |
+| Light Berry | #ae606d  |
+| Dark Berry  | #673653  |
+| Light Peach | #fdac89  |
+| Dark Peach  | #de8274  |
+| Yellowish   | #fec252  |
+| Orangish    | #ed6a56  |
