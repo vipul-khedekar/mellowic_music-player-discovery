@@ -8,7 +8,7 @@
 
 **Tech Used: ReactJS, Redux Toolkit, Javascript, Styled Components, SwiperJS, React Router, Axios, React Icons, RapidAPI, HTML, CSS and SASS/SCSS.**
 
-# 👉 Colors Used
+## 👉 Colors Used
 
 _(Source: Imagination. I just named them whatever I wanted, because why not.) 🤷_
 
@@ -22,3 +22,15 @@ _(Source: Imagination. I just named them whatever I wanted, because why not.) �
 | Dark Peach  | #de8274  |
 | Yellowish   | #fec252  |
 | Orangish    | #ed6a56  |
+
+## 👉 Credits for Assets
+
+_Thank you very much_ 🙂
+
+| Assets            | Name        | Link                                           |
+| ----------------- | ----------- | ---------------------------------------------- |
+| Favicon           | Icons8      | https://icons8.com/                            |
+| Logo              | Icons8      | https://icons8.com/                            |
+| Fonts             | Google      | https://fonts.google.com/                      |
+| Music Library API | Shazam Core | https://rapidapi.com/tipsters/api/shazam-core/ |
+| Geolocation API   | Geo Ipify   | https://geo.ipify.org/                         |
