@@ -24,8 +24,8 @@ _The core functionalities of the app:_
   - Detects if some other music is playing when a second music gets clicked to be played, while the previous one is in its play state. Resets the previous one's icon and shows the pause icon to currently playing music only.
 - **Ability to search by keyword(s).**
   - Up to 50 results can be displayed.
-- **View Top Charts from the side panel.**
-- **View Top Artists from the side panel.**
+- **View Top Charts from the side-menu.**
+- **View Top Artists from the side-menu.**
 - **View music details upon clicking on a music card.**
   - Music details include Artist's name, Album name, Album art, and genre.
   - Lyrics displayed if available.
