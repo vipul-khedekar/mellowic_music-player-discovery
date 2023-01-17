@@ -8,6 +8,45 @@
 
 **Tech Used: ReactJS, Redux Toolkit, Javascript, Styled Components, SwiperJS, React Router, Axios, React Icons, RapidAPI, HTML, CSS and SASS/SCSS.**
 
+## 👉 Major Features
+
+_The core functionalities of the app:_
+
+- **The music is in a scrollable grid format, displaying up to 50 songs at any given time.**
+- **Filter out the music library based on genres.**
+  - By default starts in the Rock genre on the discovery page.
+  - Available genres include Rock, Electronic, Pop, Hip-hop, K-pop, Country, and Worldwide.
+- **Get music recommendations based on the user's live location. (By country)**
+  - Done using the user's geolocation data.
+  - Tracking doesn't work when AdBlocker is active in the browser.
+- **Playing music changes its play icon to the pause icon.**
+  - Pausing it changes it back to the play icon.
+  - Detects if some other music is playing when a second music gets clicked to be played, while the previous one is in its play state. Resets the previous one's icon and shows the pause icon to currently playing music only.
+- **Ability to search by keyword(s).**
+  - Up to 50 results can be displayed.
+- **View Top Charts from the side panel.**
+- **View Top Artists from the side panel.**
+- **View music details upon clicking on a music card.**
+  - Music details include Artist's name, Album name, Album art, and genre.
+  - Lyrics displayed if available.
+- **The right panel includes currently trending artists and top 5 music.**
+  - Draggable slider view for artists.
+  - Strip view for the top 5 songs.
+  - Click on 'see more...' to view all.
+- **Lazy-loading images only load when they come into the visible part of the browser window, saving the user's bandwidth.**
+- **404 "Page not found" error page will appear upon entering an unknown URL.**
+- **Used appropriate HTML tags promoting browser accessibility settings for specially-abled users.**
+- **Single screen multi-sectional dashboard.**
+  - All super app features are consolidated into one page, to promote fewer reloads and increase performance.
+  - The extra scroll requirement of the music and artists list was solved using a mini-overflow area.
+- **Responsive design.**
+  - Switch smoothly between 16:9 desktop, and 3:4 tablet screen sizes, and loosely also compatible with narrow mobile screen sizes.
+  - Hides logo and menu panel when in tablet and mobile view.
+- **Wrote reusable components.**
+  - For result display grid, song card, artist card, artist headshot, and top-chart strip.
+  - Mapped genre list.
+  - Saved the development time by removing the need to write the same code for each recurring item.
+
 ## 👉 Colors Used
 
 _(Source: Imagination. I just named them whatever I wanted, because why not.) 🤷_
