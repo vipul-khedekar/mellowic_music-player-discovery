@@ -4,7 +4,7 @@
     <img width="90%" height="90%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202022-12-21%20at%2019-57-36%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=6eff10c1-970c-45e5-8d34-c836a94c74e6" alt="home-page">
 </div>
 
-**Discover trending music, top artists, and lyrics. Shows now playing or paused song using icon toggles. Get location-based recommendations or filter by genres from a great collection of music libraries. All these features are packed in one super-app, with four colors' six-toned combination for a sleek modern look.**
+**Discover trending music, top artists, and lyrics. Shows now playing or paused song using icon toggles. Get location-based recommendations or filter by genres from a great collection of music libraries. All these features are packed in one super-app, with four colors' six-toned combination for a sleek modern interface.**
 
 **Tech Used: ReactJS, Redux Toolkit, Javascript, Styled Components, SwiperJS, React Router, Axios, React Icons, RapidAPI, HTML, CSS and SASS/SCSS.**
 
@@ -104,3 +104,33 @@ _Thank you very much_ 🙂
 | Fonts             | Google      | https://fonts.google.com/                      |
 | Music Library API | Shazam Core | https://rapidapi.com/tipsters/api/shazam-core/ |
 | Geolocation API   | Geo Ipify   | https://geo.ipify.org/                         |
+
+## 👉 More screenshots:
+
+<div align="center">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202022-12-21%20at%2019-57-51%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=77ead49b-4509-4d0c-a84e-3e5587fc9a6a" alt="artist-slider">
+</div>
+
+<div align="center">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202022-12-21%20at%2019-58-07%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=55490181-0e99-46aa-a7bc-c1025887fa8e" alt="top-5-strips">
+</div>
+
+<div align="center">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202022-12-21%20at%2019-58-33%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=2031ccac-5362-4522-a3df-73c2cea38ad4" alt="genre-selection">
+</div>
+
+<div align="center">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202022-12-21%20at%2019-58-56%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=9ce9c151-b771-459a-aa19-c6df98f472c1" alt="top-artists">
+</div>
+
+<div align="center">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202022-12-21%20at%2019-59-44%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=7d77a854-2cfc-4ee1-9174-c78c4a342402" alt="lyrics">
+</div>
+
+<div align="center">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202022-12-21%20at%2020-00-20%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=7bef614b-f2cb-45d1-99df-ff878028ec3d" alt="search-results">
+</div>
+
+<div align="center">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202022-12-21%20at%2020-00-47%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=9104f2bb-0a0c-439a-9ff4-8f2ece424803" alt="location-based-option">
+</div>
