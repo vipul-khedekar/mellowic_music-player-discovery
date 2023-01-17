@@ -47,6 +47,37 @@ _The core functionalities of the app:_
   - Mapped genre list.
   - Saved the development time by removing the need to write the same code for each recurring item.
 
+👉 Quality of Life and Design Features
+
+Little details that cumulatively add to a great user experience:
+
+- **Modern design with four colors' six-toned combination complements each other, along with similar toned lighter color for characters.**
+  - Linear gradients give a slightly shiny look to the background, cards, and strips.
+  - Light and dark purple.
+  - Light and dark cream.
+  - Yellow and Orange.
+- **The artist slider's mouse pointer changes to a grabber to signify that it's horizontally draggable.**
+- **Visual cues for detecting current playing or paused music state.**
+- **Alert message in location-based music recommendations page if the adblocker interrupts the GET request.**
+  - Disable the adblocker for it to work.
+- **Default picture is displayed if a music is missing its album art.**
+- **Replaces the ending of extra long titles or artist credits with triple dots if it overflows beyond certain characters.**
+- **Inputted keywords auto-blanks upon search completion.**
+- **Mouse hover effect.**
+  - The side-menu options scale up and shift the text slightly right.
+  - Artist cards, music cards, and strips scale up and brighten.
+  - Other non-hovered elements stay unaffected by changes in neighboring elements.
+- **Error message if there was a problem fetching music or artist list.**
+- **Notification message if music lacks lyrics data.**
+- **Smooth transition animations.**
+- **A fitting icon is next to the option of the side-menu.**
+- **Animated loader.**
+  - Appears when the app is in the process of data fetching.
+  - Disappears as soon as data is ready to be displayed to the user.
+- **Custom thin scrollbar design matching the theme.**
+- **Title of the web app in the browser's tab.**
+- **Custom favicon.**
+
 ## 👉 Colors Used
 
 _(Source: Imagination. I just named them whatever I wanted, because why not.) 🤷_
