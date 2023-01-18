@@ -104,6 +104,7 @@ _Thank you very much_ 🙂
 | Fonts             | Google      | https://fonts.google.com/                      |
 | Music Library API | Shazam Core | https://rapidapi.com/tipsters/api/shazam-core/ |
 | Geolocation API   | Geo Ipify   | https://geo.ipify.org/                         |
+| Loaders           | Sam Herbert | https://github.com/SamHerbert/SVG-Loaders      |
 
 ## 👉 More screenshots:
 
