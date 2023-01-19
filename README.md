@@ -109,11 +109,6 @@ _Thank you very much_ 🙂
 ## 👉 More screenshots:
 
 <div align="center">
-    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202022-12-21%20at%2020-00-47%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=9104f2bb-0a0c-439a-9ff4-8f2ece424803" alt="location-based-option">
-</div>
-<p align="center">(Fig.1 - Location-based Recommendations)</p><br />
-
-<div align="center">
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202023-01-19%20at%2021-53-37%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=6884e7fd-0d13-4ca2-9ded-44a2e2858d0a" alt="top-charts">
 </div>
 <p align="center">(Fig.2 - Top Charts)</p><br />
@@ -147,3 +142,8 @@ _Thank you very much_ 🙂
     <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202022-12-21%20at%2020-00-20%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=7bef614b-f2cb-45d1-99df-ff878028ec3d" alt="search-results">
 </div>
 <p align="center">(Fig.8 - Search Result)</p><br />
+
+<div align="center">
+    <img width="70%" height="70%" src="https://firebasestorage.googleapis.com/v0/b/github-profile-v1.appspot.com/o/projects%2Fmellowic%2FScreenshot%202022-12-21%20at%2020-00-47%20Mellowic%20-%20A%20music%20player%20and%20discovery.webp?alt=media&token=9104f2bb-0a0c-439a-9ff4-8f2ece424803" alt="location-based-option">
+</div>
+<p align="center">(Fig.1 - Location-based Recommendations)</p>
