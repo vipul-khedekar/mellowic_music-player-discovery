@@ -47,7 +47,7 @@ _The core functionalities of the app:_
   - Mapped genre list.
   - Saved the development time by removing the need to write the same code for each recurring item.
 
-👉 Quality of Life and Design Features
+## 👉 Quality of Life and Design Features
 
 Little details that cumulatively add to a great user experience:
 
